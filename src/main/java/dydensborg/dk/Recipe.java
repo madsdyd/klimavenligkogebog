@@ -130,6 +130,7 @@ public class Recipe {
         }
         r.persons = jsonObject.getJsonNumber("persons").intValue();
 
+        System.out.println("Parsed recipe " + r.name);
 
         return r;
     }
@@ -192,4 +193,50 @@ public class Recipe {
         co2 = res;
         return res;
     }
+
+    /**
+     * Generate a tex string.
+     *
+     * Environment variables
+     *
+     * #1 : Navn
+     * #2 : Introtekst / desc
+     * #3 : How many persons
+     * #4 : CO2
+     * #5 : Tid
+     * #6 : Ingredientslist
+     * #7 : Recipe
+     *
+     * @return A tex String.
+     */
+    public String toTex(Map<String, Ingredient> ingredientMap) {
+        StringBuilder sb = new StringBuilder();
+
+        // The only real thing to calculate is the
+        // Ingredient list
+
+        StringBuilder il = new StringBuilder();
+        il.append("  \\begin{ingredients}" + System.lineSeparator());
+        for (Content c: contents) {
+            il.append("    \\ingredient{")
+                    .append(c.getId()).append("}{")
+                    .append(String.format("%.0f", c.getAmount())).append("}{")
+                    .append(ingredientMap.get(c.getId()).getUnit()).append("}" + System.lineSeparator());
+        }
+        il.append("  \\end{ingredients}" + System.lineSeparator());
+
+        sb
+                .append("\\begin{recipe}" + System.lineSeparator())
+                .append("  {" + name + "}" + System.lineSeparator())
+                .append("  {" + desc.replaceAll(("\\\\"), ("\\\\\\\\" + System.lineSeparator())) + "}" + System.lineSeparator())
+                .append("  {" + persons + "}" + System.lineSeparator())
+                .append("  {" + String.format("%.2f", co2) + "}" + System.lineSeparator())
+                .append("  {" + time + "}" + System.lineSeparator())
+                .append("  {" + il.toString() + "}" + System.lineSeparator())
+                .append("  {" + recipe.replaceAll(("\\\\"), ("\\\\\\\\" + System.lineSeparator())) + "}" + System.lineSeparator())
+                .append("\\end{recipe}" + System.lineSeparator() + System.lineSeparator());
+
+        return sb.toString();
+    }
+
 }

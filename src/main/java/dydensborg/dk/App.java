@@ -1,8 +1,11 @@
 package dydensborg.dk;
 
 import org.apache.commons.cli.*;
+import org.apache.commons.io.FileUtils;
 
+import java.io.File;
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.List;
@@ -14,8 +17,7 @@ import java.util.Map;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ) throws IOException {
 
         // create Options object
         Options options = new Options();
@@ -85,6 +87,7 @@ public class App
         ingredients.forEach(i -> ingredientMap.put(i.getId(), i));
 
         // Debug
+        System.out.println("Dumping all read ingredient data");
         ingredients.forEach(System.out::println);
 
         System.out.println("Parsing recipes from " + recipesFile);
@@ -103,15 +106,23 @@ public class App
         }
 
         // Debug
+        System.out.println("Dumping all read recipe data");
         recipes.forEach(System.out::println);
 
 
 
         ///////////////////////////////////////////////////
         // Generate output.
+        StringBuilder output = new StringBuilder();
+        for(Recipe r : recipes) {
+            output.append(r.toTex(ingredientMap));
+        }
 
+        // System.out.print(output.toString());
 
-        System.out.println( "Everything passed" );
+        FileUtils.writeStringToFile(new File(outputFileName), output.toString(), Charset.forName("UTF-8"), false);
+
+        System.out.println( "Output written to " + outputFileName );
 
     }
 }

@@ -71,6 +71,8 @@ public class Ingredient {
         }
         i.co2 = jsonObject.getJsonNumber("co2").doubleValue();
 
+        System.out.println("Parsed ingredient " + i.id);
+
         return i;
     }
 
