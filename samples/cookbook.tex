@@ -25,31 +25,80 @@
 
 \begin{document}
 
-% Arg1 = titel / name
-% Arg2 = text describing receipe
-\newenvironment{recipie}[4]{
-	\section{#1}
-	#2
-	#3
-	\subsection{Fremgangsmåde}
+
+
+
+
+% Arg1 = Opskriftens navn
+% Arg2 = Beskrivelse af opskriften
+% Arg3 = Antal personer
+% Arg4 = Udledning af CO2
+% Arg5 = Tid
+% Arg6 = Ingridiensliste
+% Arg7 = Fremgangsmåde
+\newenvironment{recipe}[7]{
+	\section*{#1}
+	\textit{#2}
+	Antal personer: #3
 	#4
+	#5
+	\subsection*{Ingridienser}
+	#6
+	\subsection*{Fremgangsmåde}
+	#7
 }
-{}
-	
-	
-	
-\begin{recipie}{Boller i karry}{Boller i karry kan alle i verden li!}
-	{	\begin{itemize}
-			\item 200 g Kartofler
-			\item 200 g Ris
-			\item 600 g Kød
-		\end{itemize}
-	}
-	{Tril nogle boller\\
-		Kog nogle ris\\
-		}
-\end{recipie}
-	
+{\newpage}
+
+
+\newenvironment{ingredients}{\begin{itemize}
+}{	\end{itemize}}
+
+% Navn, mængde, unit
+\newcommand{\ingredient}[3]{
+	\item #2 #3 #1
+}
+
+
+\begin{recipe}
+	{Boller i Karry}
+	{Boller i Karry er en dejlig ret, som alle kan lide}
+	{4}
+	{262000,00}
+	{1 time}
+	{\begin{ingredients}
+			\ingredient{Kartofler}{300}{g}
+			\ingredient{Ris}{200}{kg}
+			\ingredient{sdfsdf}{3df00}{gf}
+			
+		\end{ingredients}
+			
+			}
+	{Tag en stor gryde. \\
+		Snit kartoflerne fint. Kog lortet\\
+		Efter 30 minutter er det færdigt}
+\end{recipe}
+
+
+
+
+
+
+
+
+
+
+\begin{recipe}
+	{Boller i Karry med svedsker}
+	{Boller i Karry er en dejlig ret, som alle kan lide. Denne variation gør dig glad}
+	{4}
+	{362666,67}
+	{1 t 40 m}
+	{TBD}
+			{Tag en stor gryde. \\
+				Snit kartoflerne fint. Hak en svedske. Kog lortet\\
+				Efter 30 minutter er det færdigt}
+		\end{recipe}
+
 	
 \end{document}
 
