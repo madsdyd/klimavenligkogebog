@@ -1,0 +1,57 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{color}
+\definecolor{amethyst}{rgb}{0.6, 0.4, 0.8}
+\color{black}
+\usepackage[danish]{babel}
+\geometry{
+	verbose,
+	tmargin=2.5cm,
+	bmargin=2.5cm,
+	lmargin=2.5cm,
+	rmargin=2.5cm
+}
+\setlength{\parindent}{0ex}
+
+
+%opening
+\title{Matematik B - Hjemmeopgave til d. 21/4 2017}
+\author{af Baltazar Dydensborg}
+
+
+\begin{document}
+
+% Arg1 = titel / name
+% Arg2 = text describing receipe
+\newenvironment{recipie}[4]{
+	\section{#1}
+	#2
+	#3
+	\subsection{Fremgangsmåde}
+	#4
+}
+{}
+	
+	
+	
+\begin{recipie}{Boller i karry}{Boller i karry kan alle i verden li!}
+	{	\begin{itemize}
+			\item 200 g Kartofler
+			\item 200 g Ris
+			\item 600 g Kød
+		\end{itemize}
+	}
+	{Tril nogle boller\\
+		Kog nogle ris\\
+		}
+\end{recipie}
+	
+	
+\end{document}
+
+
+
