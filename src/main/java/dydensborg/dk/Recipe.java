@@ -9,7 +9,9 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by madsdyd on 11-07-17.
@@ -43,6 +45,27 @@ public class Recipe {
                     ", amount=" + amount +
                     '}';
         }
+
+        // Adjust to a single person, based on the number of persons the recipe is for.
+        public void adustToPersons(double persons) {
+            amount = amount / persons;
+        }
+
+        public String getId() {
+            return id;
+        }
+
+        public void setId(String id) {
+            this.id = id;
+        }
+
+        public double getAmount() {
+            return amount;
+        }
+
+        public void setAmount(double amount) {
+            this.amount = amount;
+        }
     }
 
 
@@ -52,6 +75,7 @@ public class Recipe {
     List<Content> contents = new ArrayList<>();
     double co2; // Calculated total.
     int persons;
+    String time;
 
 
 
@@ -84,6 +108,11 @@ public class Recipe {
         r.recipe = jsonObject.getString("recipe");
         if ( r.recipe == null || r.recipe.equals("")) {
             System.err.println("While parsing recipe for " + r.name + ", missing recipe. Please check file for errors");
+        }
+
+        r.time = jsonObject.getString("time");
+        if ( r.time == null || r.time.equals("")) {
+            r.time = "Ukendt";
         }
 
         // Parse the array.
@@ -138,13 +167,29 @@ public class Recipe {
                 ", contents=" + contents +
                 ", co2=" + co2 +
                 ", persons=" + persons +
+                ", time='" + time + '\'' +
                 '}';
     }
 
-    // Calculates the co2 in the total
-    public void calculateCo2(Ingredient ingredients) {
-
+    // Only call this once. It adjust the content to the number of persons.
+    public void adjustToPersons(int numPersons) {
+        if (persons != numPersons) {
+            contents.forEach(c -> {
+                c.adustToPersons( ((double) persons) / numPersons);
+            });
+            persons = numPersons;
+        }
     }
 
-
+    public double calculateCo2(Map<String, Ingredient> ingredientsMap) {
+        double res = 0.0;
+        for(Content c : contents) {
+            if ( null == ingredientsMap.get(c.getId())) {
+                System.err.println("While calculating CO2 for '" + name + "': Unable to locate ingredient '" + c.getId() + "'");
+            }
+            res += c.getAmount() * ingredientsMap.get(c.getId()).getCo2();
+        };
+        co2 = res;
+        return res;
+    }
 }

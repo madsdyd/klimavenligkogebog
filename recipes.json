@@ -8,7 +8,8 @@
         {"id":"Kød", "amount":600}
     ],
     "recipe":"Tag en stor gryde. \\Snit kartoflerne fint. Kog lortet\\Efter 30 minutter er det færdigt",
-      "persons":4
+      "persons":4,
+      "time": "1 time"
     },
     {
     "name":"Boller i Karry med svedsker",
@@ -20,6 +21,7 @@
         {"id":"Svedsker", "amount":100}
     ],
     "recipe":"Tag en stor gryde. \\Snit kartoflerne fint. Hak en svedske. Kog lortet\\Efter 30 minutter er det færdigt",
-      "persons":3
+      "persons":3,
+      "time": "1 t 40 m"
     }
 ]

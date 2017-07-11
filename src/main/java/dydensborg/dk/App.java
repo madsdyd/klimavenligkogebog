@@ -4,7 +4,9 @@ import org.apache.commons.cli.*;
 
 import java.io.IOException;
 import java.nio.file.Paths;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Hello world!
@@ -18,12 +20,13 @@ public class App
         // create Options object
         Options options = new Options();
 
-        int budgetYear = 2017;
+        int numPersons = 4;
         String outputFileName = "recepies.tex";
 
         // add options
         options.addOption("h", "help", false, "print this message");
         options.addOption("o", "output", true, "output file [" + outputFileName + "]");
+        options.addOption("p", "persons", true, "how many persons to create for [" + numPersons + "]");
 
         // generate Help Formatter
         HelpFormatter formatter = new HelpFormatter();
@@ -45,6 +48,11 @@ public class App
             formatter.printHelp( "cookbook [OPTIONS] ingredients.json recepies.json", "Where options can be:", options, null );
             System.exit(0);
         }
+
+        if (line.hasOption("persons")) {
+            numPersons = Integer.parseInt(line.getOptionValue("persons"));
+        }
+
 
         // Test we have two free options, or complain
         if ( line.getArgList().size() != 2 ) {
@@ -72,6 +80,10 @@ public class App
             System.exit(1);
         }
 
+        // Create a hash for quicker lookup with many ingredients.
+        Map<String, Ingredient> ingredientMap = new HashMap<>();
+        ingredients.forEach(i -> ingredientMap.put(i.getId(), i));
+
         // Debug
         ingredients.forEach(System.out::println);
 
@@ -82,6 +94,12 @@ public class App
         } catch (IOException e) {
             e.printStackTrace();
             System.exit(1);
+        }
+
+        for (Recipe r : recipes) {
+            r.adjustToPersons(numPersons);
+            r.calculateCo2(ingredientMap);
+
         }
 
         // Debug
