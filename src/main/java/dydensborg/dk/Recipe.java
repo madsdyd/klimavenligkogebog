@@ -220,7 +220,7 @@ public class Recipe {
         for (Content c: contents) {
             il.append("    \\ingredient{")
                     .append(c.getId()).append("}{")
-                    .append(String.format("%.0f", c.getAmount())).append("}{")
+                    .append(String.format("%.3f", c.getAmount())).append("}{")
                     .append(ingredientMap.get(c.getId()).getUnit()).append("}" + System.lineSeparator());
         }
         il.append("  \\end{ingredients}" + System.lineSeparator());
