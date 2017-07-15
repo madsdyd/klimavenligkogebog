@@ -47,28 +47,6 @@
       <version>1.1</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
-    <!--Used to parse the HTML/XML returned in the budgets -->
-    <dependency>
-      <groupId>org.jsoup</groupId>
-      <artifactId>jsoup</artifactId>
-      <version>1.10.2</version>
-    </dependency>
-
-    <!-- Use odf-toolkit to create ods files / spreadsheets -->
-    <!-- https://mvnrepository.com/artifact/org.apache.odftoolkit/simple-odf -->
-    <dependency>
-      <groupId>org.apache.odftoolkit</groupId>
-      <artifactId>simple-odf</artifactId>
-      <version>0.8.2-incubating</version>
-    </dependency>
-
-    <!--
-            <dependency>
-                <groupId>org.odftoolkit</groupId>
-                <artifactId>simple-odf</artifactId>
-                <version>0.5</version>
-            </dependency> -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
