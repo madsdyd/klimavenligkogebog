@@ -66,6 +66,19 @@ public class Recipe {
         public void setAmount(double amount) {
             this.amount = amount;
         }
+
+
+        public String toTex(Map<String,Ingredient> ingredientMap) {
+            StringBuilder res = new StringBuilder();
+            res
+                    .append("    \\ingredient{")
+                    .append(getId()).append("}{")
+                    .append(String.format("%.3f", getAmount())).append("}{")
+                    .append(ingredientMap.get(getId()).getUnit())
+                    .append("}" + System.lineSeparator());
+            return res.toString();
+        }
+
     }
 
 
@@ -218,10 +231,7 @@ public class Recipe {
         StringBuilder il = new StringBuilder();
         il.append("  \\begin{ingredients}" + System.lineSeparator());
         for (Content c: contents) {
-            il.append("    \\ingredient{")
-                    .append(c.getId()).append("}{")
-                    .append(String.format("%.3f", c.getAmount())).append("}{")
-                    .append(ingredientMap.get(c.getId()).getUnit()).append("}" + System.lineSeparator());
+            il.append(c.toTex(ingredientMap));
         }
         il.append("  \\end{ingredients}" + System.lineSeparator());
 
