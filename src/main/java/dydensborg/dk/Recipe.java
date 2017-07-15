@@ -233,9 +233,7 @@ public class Recipe {
     public String toTex(Map<String, Ingredient> ingredientMap) {
         StringBuilder sb = new StringBuilder();
 
-        // The only real thing to calculate is the
         // Ingredient list
-
         StringBuilder il = new StringBuilder();
         il.append("  \\begin{ingredients}" + System.lineSeparator());
         for (Content c: contents) {
@@ -243,12 +241,16 @@ public class Recipe {
         }
         il.append("  \\end{ingredients}" + System.lineSeparator());
 
+        // Co2 is currently for the entire course, lets do per person too
+        String co2string = String.format("%.2f/%.2f", co2/persons, co2);
+
         sb
                 .append("\\begin{recipe}" + System.lineSeparator())
                 .append("  {" + name + "}" + System.lineSeparator())
                 .append("  {" + desc.replaceAll(("\\\\"), ("\\\\\\\\" + System.lineSeparator())) + "}" + System.lineSeparator())
                 .append("  {" + persons + "}" + System.lineSeparator())
-                .append("  {" + String.format("%.2f", co2) + "}" + System.lineSeparator())
+                // #4 : C2
+                .append("  {" + co2string + "}" + System.lineSeparator())
                 .append("  {" + time + "}" + System.lineSeparator())
                 .append("  {" + il.toString() + "}" + System.lineSeparator())
                 .append("  {" + recipe.replaceAll(("\\\\"), ("\\\\\\\\" + System.lineSeparator())) + "}" + System.lineSeparator())
