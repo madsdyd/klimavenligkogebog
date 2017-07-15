@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -71,18 +72,102 @@ public class Recipe {
         public String toTex(Map<String,Ingredient> ingredientMap) {
             StringBuilder res = new StringBuilder();
 
-            String amountString = String.format("%.3f", getAmount());
-            String unitString = ingredientMap.get(getId()).getUnit();
+            // We present the information differently than it is stored
+            double presentationAmount = getAmount();
+            String presentationUnit = ingredientMap.get(getId()).getUnit();
+
+            // Convert some units to make stuff prettier
+
+            // Weird units
+            // Teaspoon to something larger
+            if ( presentationUnit.equals("tsk") && presentationAmount > 8) {
+                presentationAmount = presentationAmount / 3;
+                presentationUnit = "spsk";
+            }
+
+            // Spoons to dl
+            if ( presentationUnit.equals("spsk") && presentationAmount > 10) {
+                // 1 spsk is 0.15 dl
+                presentationAmount = presentationAmount *0.15;
+                presentationUnit = "dl";
+            }
+
+
+            // SI: Basic rule, if larger > 1000, go up in unit, if lower than 1, go down
+            // Special rule for dl => l unit.
+            if (presentationAmount > 10) {
+                // If we know the unit, go "up" in unit
+                if (presentationUnit.equals("dl")) {
+                    presentationAmount = presentationAmount / 10;
+                    presentationUnit = "l";
+                }
+            }
+
+            if (presentationAmount > 1000) {
+                // If we know the unit, go "up" in unit
+                if (presentationUnit.equals("g")) {
+                    presentationAmount = presentationAmount / 1000;
+                    presentationUnit = "kg";
+                }
+                if (presentationUnit.equals("ml")) {
+                    presentationAmount = presentationAmount / 1000;
+                    presentationUnit = "l";
+                }
+            }
+
+
+            if (presentationAmount < 1) {
+                // If we know the unit, go "down" in unit
+                if (presentationUnit.equals("kg")) {
+                    presentationAmount = presentationAmount * 1000;
+                    presentationUnit = "g";
+                    presentationAmount = Math.round(presentationAmount);
+                }
+                if (presentationUnit.equals("l")) {
+                    presentationAmount = presentationAmount * 1000;
+                    presentationUnit = "ml";
+                    presentationAmount = Math.round(presentationAmount);
+                }
+            }
+
+
+
+            // Do not use decimals for these types.
+            if (presentationUnit.equals("example")) {
+                presentationAmount = Math.round(presentationAmount);
+            }
+
+
+
+
+            // format without trailing zeros, max two decimals.
+            String amountString = new DecimalFormat("###.##").format(presentationAmount);
+
+            // For some units, round or use interval.
+            if (presentationUnit.equals("tsk") || presentationUnit.equals("spsk")) {
+                if ((presentationAmount - Math.floor(presentationAmount)) < 0.3) {
+                    amountString = new DecimalFormat("###.##").format(Math.floor(presentationAmount));
+                } else {
+                    if ((Math.ceil(presentationAmount) - presentationAmount) < 0.3) {
+                        amountString = new DecimalFormat("###.##").format(Math.ceil(presentationAmount));
+                    } else {
+                        amountString = new DecimalFormat("###.##").format(Math.floor(presentationAmount)) + "-"
+                                + new DecimalFormat("###.##").format(Math.ceil(presentationAmount));
+                    }
+                }
+            }
+
+            // Ignore amounts that are zero
             if ( getAmount() < 0.000001 ) {
                 amountString = "";
-                unitString = "";
+                presentationUnit = "";
             }
 
             res
                     .append("    \\ingredient{")
                     .append(getId()).append("}{")
                     .append(amountString).append("}{")
-                    .append(unitString)
+                    .append(presentationUnit)
                     .append("}" + System.lineSeparator());
             return res.toString();
         }
