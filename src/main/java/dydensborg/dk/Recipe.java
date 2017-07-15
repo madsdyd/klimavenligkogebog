@@ -6,6 +6,8 @@ import javax.json.JsonObject;
 import javax.json.JsonReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.math.BigDecimal;
+import java.math.MathContext;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.text.DecimalFormat;
@@ -141,10 +143,13 @@ public class Recipe {
 
 
             // format without trailing zeros, max two decimals.
-            String amountString = new DecimalFormat("###.##").format(presentationAmount);
+            // String amountString = new DecimalFormat("###.##").format(presentationAmount);
+
+            String amountString = "";
 
             // For some units, round or use interval.
-            if (presentationUnit.equals("tsk") || presentationUnit.equals("spsk")) {
+            if ((presentationUnit.equals("tsk") || presentationUnit.equals("spsk"))
+                    && presentationAmount > 1 ) {
                 if ((presentationAmount - Math.floor(presentationAmount)) < 0.3) {
                     amountString = new DecimalFormat("###.##").format(Math.floor(presentationAmount));
                 } else {
@@ -155,6 +160,12 @@ public class Recipe {
                                 + new DecimalFormat("###.##").format(Math.ceil(presentationAmount));
                     }
                 }
+            } else {
+                // Round to two significant digits
+                BigDecimal bd = new BigDecimal(presentationAmount);
+                bd = bd.round(new MathContext(2));
+                presentationAmount = bd.doubleValue();
+                 amountString = new DecimalFormat("###.##").format(presentationAmount);
             }
 
             // Ignore amounts that are zero
