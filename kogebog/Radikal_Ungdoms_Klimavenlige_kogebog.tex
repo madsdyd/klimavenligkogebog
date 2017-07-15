@@ -97,7 +97,7 @@
 	\newenvironment{ruingredients}{}{}
 
 	% Den command der bruges til ingridienser. Formen er Navn, mængde, unit
-	\newcommand{\ruingredient}[3]{ #2 #3 & #1 \\ }
+	\newcommand{\ruingredient}[3]{ \unit[#2]{#3} & #1 \\ }
 
 	% Kommando til at beskrive steps
 	\newcommand{\rustep}[1]{ \step #1}
