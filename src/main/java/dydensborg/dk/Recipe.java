@@ -70,11 +70,19 @@ public class Recipe {
 
         public String toTex(Map<String,Ingredient> ingredientMap) {
             StringBuilder res = new StringBuilder();
+
+            String amountString = String.format("%.3f", getAmount());
+            String unitString = ingredientMap.get(getId()).getUnit();
+            if ( getAmount() < 0.000001 ) {
+                amountString = "";
+                unitString = "";
+            }
+
             res
                     .append("    \\ingredient{")
                     .append(getId()).append("}{")
-                    .append(String.format("%.3f", getAmount())).append("}{")
-                    .append(ingredientMap.get(getId()).getUnit())
+                    .append(amountString).append("}{")
+                    .append(unitString)
                     .append("}" + System.lineSeparator());
             return res.toString();
         }
