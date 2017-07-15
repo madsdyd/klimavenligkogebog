@@ -11,10 +11,7 @@ import java.math.MathContext;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by madsdyd on 11-07-17.
@@ -175,7 +172,7 @@ public class Recipe {
             }
 
             res
-                    .append("    \\ingredient{")
+                    .append("    \\ruingredient{")
                     .append(getId()).append("}{")
                     .append(amountString).append("}{")
                     .append(presentationUnit)
@@ -331,17 +328,25 @@ public class Recipe {
 
         // Ingredient list
         StringBuilder il = new StringBuilder();
-        il.append("  \\begin{ingredients}" + System.lineSeparator());
+        //il.append("  \\begin{ruingredients}" + System.lineSeparator());
         for (Content c: contents) {
             il.append(c.toTex(ingredientMap));
         }
-        il.append("  \\end{ingredients}" + System.lineSeparator());
+        //il.append("  \\end{ruingredients}" + System.lineSeparator());
 
         // Co2 is currently for the entire course, lets do per person too
         String co2string = String.format("%.2f/%.2f", co2/persons, co2);
 
+        // The steps needs to be calculated from \\ in the code.
+        List<String> stepsList = Arrays.asList(recipe.split("\\\\"));
+        StringBuilder steps = new StringBuilder();
+        for(String step : stepsList) {
+            steps.append("\\rustep{").append(step).append("}").append(System.lineSeparator());
+        }
+
+
         sb
-                .append("\\begin{recipe}" + System.lineSeparator())
+                .append("\\begin{rurecipe}" + System.lineSeparator())
                 .append("  {" + name + "}" + System.lineSeparator())
                 .append("  {" + desc.replaceAll(("\\\\"), ("\\\\\\\\" + System.lineSeparator())) + "}" + System.lineSeparator())
                 .append("  {" + persons + "}" + System.lineSeparator())
@@ -349,8 +354,8 @@ public class Recipe {
                 .append("  {" + co2string + "}" + System.lineSeparator())
                 .append("  {" + time + "}" + System.lineSeparator())
                 .append("  {" + il.toString() + "}" + System.lineSeparator())
-                .append("  {" + recipe.replaceAll(("\\\\"), ("\\\\\\\\" + System.lineSeparator())) + "}" + System.lineSeparator())
-                .append("\\end{recipe}" + System.lineSeparator() + System.lineSeparator());
+                .append("  {" + steps.toString() + "}" + System.lineSeparator())
+                .append("\\end{rurecipe}" + System.lineSeparator() + System.lineSeparator());
 
         return sb.toString();
     }

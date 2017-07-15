@@ -4,6 +4,7 @@
 \usepackage{amsmath, amssymb}
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
+\usepackage{xcookybooky}
 %\usepackage{chemformula}
 %\usepackage{chemstyle}
 %\usepackage{chemmacros}
@@ -38,30 +39,55 @@
 	% Arg5 = Tid
 	% Arg6 = Ingridiensliste
 	% Arg7 = Fremgangsmåde
-	\newenvironment{recipe}[7]{
-		\section*{#1}
-		\textit{#2}\\
+	\newenvironment{rurecipe}[7]{
+		\begin{recipe}
+		[%
+			portion={\portion{#3}},
+			preparationtime={#5},
+			calory={#4}
+		]
+		{#1}
 		
-		Antal personer: #3\\
 		
-		Kg \coo ækvivalenter (pr. person/hele retten): #4\\
+		\ingredients
+		{%
+			#6
+		}
 		
-		Estimeret tidsforbrug: #5
-		\subsection*{Ingredienser}
-		#6
-		\subsection*{Fremgangsmåde}
-		#7
+		\introduction{
+			#2
+		}
+				
+		\preparation{
+			 #7	
+		}
+			
+				
+%		Estimeret tidsforbrug: #5
+		
+	\end{recipe}
 	}
 	{\newpage}
 	
 	%Det enviroment der bruges til ingridienslister
-	\newenvironment{ingredients}{\begin{itemize}
-	}{	\end{itemize}}
+	\newenvironment{ruingredients}{}{}
 
 	% Den command der bruges til ingridienser. Formen er Navn, mængde, unit
-	\newcommand{\ingredient}[3]{
-	\item #2 #3 #1
+	\newcommand{\ruingredient}[3]{ #2 #3 & #1 \\ }
+
+	% Kommando til at beskrive steps
+	\newcommand{\rustep}[1]{ \step #1}
+
+% Opsætning af sprog af xcookybooky
+\setHeadlines {
+	inghead = Ingredienser,
+	hinthead = Tip,
+	prephead = Tilberedning,
+	continuationhead = Forsættes \dots,
+	calory= Kg \coo ækvivalenter (person/total)
 }
+
+\renewcommand{\portion}{Antal personer: }
 
 
 \input{recipes.tex}
