@@ -8,6 +8,10 @@
 %\usepackage{chemformula}
 %\usepackage{chemstyle}
 %\usepackage{chemmacros}
+
+
+\usepackage{ pbsi }
+
 \usepackage{float}
 \usepackage{color}
 \definecolor{amethyst}{rgb}{0.6, 0.4, 0.8}
@@ -24,12 +28,32 @@
 
 \newcommand{\coo}{CO$_2$ }
 
-%opening
-\title{Matematik B - Hjemmeopgave til d. 21/4 2017}
-\author{af Baltazar Dydensborg}
 
 
+
+
+
+\usepackage{hyperref}    % must be the last package
+\hypersetup{%
+	pdfauthor            = {Radikal Ungdom},
+	pdftitle             = {Klimavenlig kogebog},
+	pdfsubject           = {Madlavning},
+	pdfkeywords          = {madlavning, opskrifter, klima},
+	pdfstartview         = {FitV},
+	pdfview              = {FitH},
+	pdfpagemode          = {UseNone}, % Options; UseNone, UseOutlines
+	bookmarksopen        = {true},
+	pdfpagetransition    = {Glitter},
+	colorlinks           = {true},
+	linkcolor            = {black},
+	urlcolor             = {blue},
+	citecolor            = {black},
+	filecolor            = {black},
+}
 \begin{document}
+	
+	
+	
 	
 	%Det enviroment der bruges til den enkelte opskrift. De forskellige variabler er
 	% Arg1 = Opskriftens navn
@@ -44,7 +68,7 @@
 		[%
 			portion={\portion{#3}},
 			preparationtime={#5},
-			calory={#4}
+			calory={#4 (Kg ækvivalenter per person/total)}
 		]
 		{#1}
 		
@@ -78,16 +102,40 @@
 	% Kommando til at beskrive steps
 	\newcommand{\rustep}[1]{ \step #1}
 
-% Opsætning af sprog af xcookybooky
+% Opsætning af xcookybooky
 \setHeadlines {
 	inghead = Ingredienser,
 	hinthead = Tip,
 	prephead = Tilberedning,
 	continuationhead = Forsættes \dots,
-	calory= Kg \coo ækvivalenter (person/total)
+	%	calory= Kg \coo ækvivalenter (person/total)
+	calory= \coo
 }
-
 \renewcommand{\portion}{Antal personer: }
+
+\setRecipenameFont{pbsi}{T1}{xl}{n}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+% Selve dok\title{Examples for using \textbf{xcookybooky}}
+%opening
+\title{Klimavenlige opskrifer}
+\author{Radikal Ungdom\\ \href{mailto:ru@ru.dk}{ru@ru.dk}}
+\maketitle
+
+\begin{abstract}
+	\noindent Noget om klimavenlige opskrifter.
+\end{abstract}
+
+\tableofcontents
+
+\vspace{5em}
+
+%\section*{Opskrifter}
 
 
 \input{recipes.tex}
