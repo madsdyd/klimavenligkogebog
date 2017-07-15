@@ -23,7 +23,7 @@ public class App
         Options options = new Options();
 
         int numPersons = 4;
-        String outputFileName = "recepies.tex";
+        String outputFileName = "recipes.tex";
 
         // add options
         options.addOption("h", "help", false, "print this message");
@@ -55,6 +55,9 @@ public class App
             numPersons = Integer.parseInt(line.getOptionValue("persons"));
         }
 
+        if (line.hasOption("output")) {
+            outputFileName = line.getOptionValue("output");
+        }
 
         // Test we have two free options, or complain
         if ( line.getArgList().size() != 2 ) {
