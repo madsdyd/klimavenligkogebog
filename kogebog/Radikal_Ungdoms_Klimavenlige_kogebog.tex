@@ -1,0 +1,73 @@
+
+\documentclass[11pt, a4paper]{article}
+\usepackage{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{chemformula}
+\usepackage{chemstyle}
+\usepackage{chemmacros}
+\usepackage{float}
+\usepackage{color}
+\definecolor{amethyst}{rgb}{0.6, 0.4, 0.8}
+\color{black}
+\usepackage[danish]{babel}
+\geometry{
+	verbose,
+	tmargin=2.5cm,
+	bmargin=2.5cm,
+	lmargin=2.5cm,
+	rmargin=2.5cm
+}
+\setlength{\parindent}{0ex}
+
+
+%opening
+\title{Matematik B - Hjemmeopgave til d. 21/4 2017}
+\author{af Baltazar Dydensborg}
+
+
+\begin{document}
+	
+	%Det enviroment der bruges til den enkelte opskrift. De forskellige variabler er
+	% Arg1 = Opskriftens navn
+	% Arg2 = Beskrivelse af opskriften
+	% Arg3 = Antal personer
+	% Arg4 = Udledning af CO2
+	% Arg5 = Tid
+	% Arg6 = Ingridiensliste
+	% Arg7 = Fremgangsmåde
+	\newenvironment{recipe}[7]{
+		\section*{#1}
+		\textit{#2}\\
+		
+		Antal personer: #3\\
+		
+		Kg $\ch{CO2}$ ækvivalenter: #4\\
+		
+		Estimeret tidsforbrug: #5
+		\subsection*{Ingredienser}
+		#6
+		\subsection*{Fremgangsmåde}
+		#7
+	}
+	{\newpage}
+	
+	%Det enviroment der bruges til ingridienslister
+	\newenvironment{ingredients}{\begin{itemize}
+	}{	\end{itemize}}
+
+	% Den command der bruges til ingridienser. Formen er Navn, mængde, unit
+	\newcommand{\ingredient}[3]{
+	\item #2 #3 #1
+}
+
+
+\input{recepies.tex}
+	
+	
+	
+\end{document}
+
+
+
