@@ -18,7 +18,8 @@
     ],
     "recipe": "Tag en stor gryde. \\Snit kartoflerne fint. Kog lortet\\Efter 30 minutter er det færdigt",
     "persons": 4,
-    "time": "1 time"
+    "time": "1 time",
+    "meal": "Morgenmad"
   },
   {
     "name": "Bradepandeomelet",
@@ -43,7 +44,8 @@
     ],
     "recipe": "Put den frosne spinat i en stor gryde med låg og varm den ved middelvarme. Hak tomaterne i små tern og put dem i gryden sammen med frø og krydderier (f.eks. lidt spidskommen og muskatnød). Sluk komfuret når spinaten er varm og smeltet.\\ Tænd ovnen på 200 grader (180 grader ved varmluft). Steg kyllingeternene på panden. Husk at kyllingen skal i ovnen, så den skal ikke være gennemstegt. Kødet må gerne være rosa. Når kyllingen er færdig blandes det i gryden sammen med resten af blandingen.\\ Pisk nu æggene godt sammen i en anden skål, massen skal være jævn og luftig.\\ Find en stor bradepande og dæk den med bagepapir eller smør den. Fordel herefter spinatblandingen jævnt og hæld æggemassen henover. Sæt det hele i ovnen og lad det bage i ca. 30-35 min.",
     "persons": 15,
-    "time": "35 minutter i ovnen"
+    "time": "35 minutter i ovnen",
+    "meal": "Morgenmad"
   },
   {
     "name": "Bønnepostej",
@@ -105,7 +107,8 @@
     ],
     "recipe": "Skyl kikærterne og lad dem dryppe godt af i en sigte.\\ Bland de øvrige ingredienser sammen og vend kikærterne i blandingen.\\ Spred de krydrede kikærterne ud på en bageplade med bagepapir og bag dem ved 220C i 20-30 min., eller indtil de virker sprøde – rør undervejs.\\Lad dem køle helt af på bagepladen.",
     "persons": 4,
-    "time": "30 minutter"
+    "time": "30 minutter",
+    "meal": "Snacks"
   },
   {
     "name": "Hummus",
@@ -179,7 +182,8 @@
     ],
     "recipe": "Rens og skær auberginerne over i halve og skær hvidløg og løget fint.\\ Dræn vandet fra kikærterne og udhul auberginen.\\ Kom olie på auberginebådene og sæt dem i en 180 grader varm ovn på et ovnfast fad, mens du steger fyldet.\\ Skær derefter kødet fra auberginen i små stykker og varm olien op i en gryde ved middelhøj varme. Tilsæt løg og hvidløg og steg dem til løgene er gennemsigtige, hvorefter karry tilsættes. Kom da kikærter og ketchup i gryden og lad det stege videre i 5 minutter.\\ Derefter tilsættes spinaten, som man lader stege indtil, at den enten er tøet op eller faldet sammen. \\Smag til med salt og peber og skær eventuelt mozzarellaen i tynde skiver. \\Tag auberginerne ud af ovnen og kom fyldet i og top evt med osten. \\Kom igen fadet ind i ovnen og bag i et kvarter til osten er smeltet og gyldenbrun eller man kan se at fyldet er blevet gyldenbrun. ",
     "persons": 3,
-    "time": "30 minutter"
+    "time": "30 minutter",
+    "meal": "Aftensmad"
   },
   {
     "name": "Indisk dhal",
@@ -236,7 +240,8 @@
     ],
     "recipe": "Varm olien i en stor gryde ved middel varme og tilsæt hvidløg og ingefær´og rør rundt i 1 minut, hvorefter karry, spidskommen, kardemomme, koriander, og chiliflager tilsættes.\\ svits krydderierne af i et minut under omrøring. \\Skyl linserne i en sigte og kom dem i gryden sammen med grøntsagsboullion og hakkede tomater. \\Lad det simre under låg i 45 minutter. Rør jævnligt i gryden og tilsæt evt. lidt vand, hvis den bliver for fast. \\Smag til med salt og server i dybe skåle med masser af koriander på toppen, raita og brød gerne naan.",
     "persons": 4,
-    "time": "1 time(med Raita)"
+    "time": "1 time(med Raita)",
+    "meal": "Aftensmad"
   },
   {
     "name": "Raita",
@@ -782,7 +787,8 @@
     ],
     "recipe": "Skyl linserne og kog dem i vandet ca. 15-20 min. Blend dem med en stavblender til en grov masse, med stykker af hele linser.\\ Bland massen med reven gulerod, porre, salt, havregryn og kikærtemel. Lad farsen trække i et par minutter og bland de resterende ingreidenser i. Tilsæt evt. mere væske.\\ Formes til 4 store eller 6 mindre burgerbøffer og steges på en pande i ca. 3 minutter på hver side.\\ Server i lune burgerboller med tilbehør",
     "persons": 5,
-    "time": "30 minutter"
+    "time": "30 minutter",
+    "meal": "Frokost"
   },
   {
     "name": "Chili sin carne",

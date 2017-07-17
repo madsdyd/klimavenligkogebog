@@ -7,9 +7,11 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Paths;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * Hello world!
@@ -117,7 +119,24 @@ public class App
         ///////////////////////////////////////////////////
         // Generate output.
         StringBuilder output = new StringBuilder();
+
+        // Sort recipes by sortorder, name, then group them
+        recipes = recipes
+                .stream()
+                .sorted(Comparator.comparing(Recipe::getMealOrder)
+                        .thenComparing(Recipe::getName))
+                .collect(Collectors.toList());
+
+
+        String lastSection = "";
+
+
+
         for(Recipe r : recipes) {
+            if (!lastSection.equals(r.getMealType())) {
+                output.append("\\rusection{" + r.getMealType() + "}" + System.lineSeparator());
+                lastSection = r.getMealType();
+            }
             output.append(r.toTex(ingredientMap));
         }
 
