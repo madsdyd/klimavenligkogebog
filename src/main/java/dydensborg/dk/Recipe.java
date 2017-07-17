@@ -375,7 +375,7 @@ public class Recipe {
         List<String> stepsList = Arrays.asList(recipe.split("\\\\"));
         StringBuilder steps = new StringBuilder();
         for(String step : stepsList) {
-            steps.append("\\rustep{").append(step).append("}").append(System.lineSeparator());
+            steps.append("\\rustep{").append(step.trim()).append("}").append(System.lineSeparator());
         }
 
 
