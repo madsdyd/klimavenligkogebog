@@ -1,5 +1,6 @@
 
 \documentclass[11pt, a4paper]{article}
+\usepackage{xcolor}
 \usepackage{geometry}
 \usepackage{amsmath, amssymb}
 \usepackage{graphicx}
@@ -10,11 +11,11 @@
 %\usepackage{chemmacros}
 
 
-\usepackage{ pbsi }
+%\usepackage{ pbsi }
 
 \usepackage{float}
 \usepackage{color}
-\definecolor{amethyst}{rgb}{0.6, 0.4, 0.8}
+\definecolor{magenta}{rgb}{1.0, 0.0, 1.0}
 \color{black}
 \usepackage[danish]{babel}
 \geometry{
@@ -46,10 +47,11 @@
 	pdfpagetransition    = {Glitter},
 	colorlinks           = {true},
 	linkcolor            = {black},
-	urlcolor             = {blue},
+	urlcolor             = {magenta},
 	citecolor            = {black},
 	filecolor            = {black},
 }
+
 \begin{document}
 	
 	
@@ -63,6 +65,7 @@
 	% Arg5 = Tid
 	% Arg6 = Ingridiensliste
 	% Arg7 = Fremgangsmåde
+	\setRecipeColors{numeration=magenta}
 	\newenvironment{rurecipe}[7]{
 		\begin{recipe}
 		[%
@@ -70,7 +73,7 @@
 			preparationtime={#5},
 			calory={#4 (Kg ækvivalenter per person/total)}
 		]
-		{#1}
+		{\textcolor{magenta}{#1}}
 		
 		
 		\ingredients
@@ -113,7 +116,7 @@
 }
 \renewcommand{\portion}{Antal personer: }
 
-\setRecipenameFont{pbsi}{T1}{xl}{n}
+%\setRecipenameFont{pbsi}{T1}{xl}{n}
 
 
 
@@ -123,24 +126,32 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 % Selve dok\title{Examples for using \textbf{xcookybooky}}
 %opening
-\title{Klimavenlige opskrifer}
-\author{Radikal Ungdom\\ \href{mailto:ru@ru.dk}{ru@ru.dk}}
+\title{Radikal Ungdoms klimavenlige kogebog}
+\author{}
 \maketitle
 
 \begin{abstract}
-	\noindent Noget om klimavenlige opskrifter.
+\noindent 	Radikal Ungdoms arbejdsgruppe for arbejdet med den klimavenlige kogebog og udvalget for Klima, Energi, Miljø og Infrastruktur 2016/17 præsenterer her Radikal Ungdoms helt egen klimavenlige kogebog - version 1.0. Opskrifterne her er valgt ud grundet deres relativt lave udledning af \coo ækvivalenter per person, en indikation på at de er gode for jordens klima. Derudover vil den høje mængde af grøntsager forbundet med de fleste opskrifter betyde at mange af dem også er ret gode for dit personlige helbred - hvis man altså holder igen med fedtstofferne.\\
+	
+\noindent	Kogebogen kan som standard fås beregnet til 3 forskellige mængder personer: 4, 10 og 80. Du sidder med INDSÆT ANTAL PERSONER KOGEBOGEN ER LAVET TIL HER udgaven. Hvis dit møde ikke passer den størrelse, er du altid velkommen til at skrive til Philip Tarning-Andersen, ordfører for Klima, Energi, Miljø og Infrastruktur, på \href{mailto:philiptarning@radikalungdom.dk}{philiptarning@radikalungdom.dk}, eller til mig. Så sender vi dig en kogebog specifikt indrettet til antallet af deltagere.\\
+	
+\noindent	Vi håber i kan bruge kogebogen. Hvis i skulle have spørgsmål, feedback, foreslag til nye opskrifter, eller andet der vedkommer kogebogsprojektet, skal i være velkommen til at skrive, enten til Philip eller jeg. Vi skal prøve at svare efter bedste evne, men hvis spørgsmålene er af kulinarisk karakter, kan det være vi må se os nødsagede til at sende dem videre til nogen af de mere køkkenkundige medlemmer af arbejdsgruppen.\\
+	
+\noindent	Held og lykke med madlavningen!\\
+	Baltazar Dydensborg\\
+	Ansvarlig for opsætning og beregninger\\
+	\href{mailto:baltazardydensborg@gmail.com}{baltazardydensborg@gmail.com}
 \end{abstract}
-
+\newpage
 \tableofcontents
 
 \vspace{5em}
+\newpage
 
 %\section*{Opskrifter}
-
-
 \input{recipes.tex}
 	
-	
+
 	
 \end{document}
 
