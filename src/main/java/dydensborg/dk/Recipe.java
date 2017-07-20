@@ -182,16 +182,47 @@ public class Recipe {
 
     }
 
+    static public class MealTypeOrdering {
+        static public int sortOrder(String mealType)  {
+            switch ( mealType) {
+                case "Aftensmad" : return 30;
+                case "Morgenmad" : return 10;
+                case "Frokost" : return 20;
+                case "Snack" : return 40;
+                default : return 50;
+            }
+        }
+    }
 
+    //  Name of the recipe
     String name;
+    // Short description / introduction
     String desc;
+    // The steps in the recipe
     String recipe;
+    // Content
     List<Content> contents = new ArrayList<>();
-    double co2; // Calculated total.
+    // Calculated co2 for the total number of persons
+    double co2;
+    // Number of persons recipe match - read from file, then adjusted to setting
     int persons;
+    // Time needed to prepare the dish.
     String time;
+    // type of meal, "Morgenmad", "Frokost", "Aftensmad", etc.
+    String mealType;
+    int mealOrder; // Calculated based on mealType....
 
 
+    public String getName() {
+        return name;
+    }
+    public int getMealOrder() {
+        return mealOrder;
+    }
+
+    public String getMealType() {
+        return mealType;
+    }
 
     /**
      * Create a single Posting object from a JsonObject.
@@ -219,15 +250,18 @@ public class Recipe {
             System.err.println("While parsing recipe for " + r.name + ", missing recipe. Please check file for errors");
         }
 
-        r.recipe = jsonObject.getString("recipe");
-        if ( r.recipe == null || r.recipe.equals("")) {
-            System.err.println("While parsing recipe for " + r.name + ", missing recipe. Please check file for errors");
-        }
-
         r.time = jsonObject.getString("time");
         if ( r.time == null || r.time.equals("")) {
             r.time = "Ukendt";
         }
+
+        // If meal type is not set, use Aftensmad.
+        try {
+            r.mealType = jsonObject.getString("meal");
+        } catch (NullPointerException e) {
+            r.mealType = "Aftensmad";
+        }
+        r.mealOrder = MealTypeOrdering.sortOrder(r.mealType);
 
         // Parse the array.
         JsonArray content = jsonObject.getJsonArray("content");
@@ -341,7 +375,7 @@ public class Recipe {
         List<String> stepsList = Arrays.asList(recipe.split("\\\\"));
         StringBuilder steps = new StringBuilder();
         for(String step : stepsList) {
-            steps.append("\\rustep{").append(step).append("}").append(System.lineSeparator());
+            steps.append("\\rustep{").append(step.trim()).append("}").append(System.lineSeparator());
         }
 
 

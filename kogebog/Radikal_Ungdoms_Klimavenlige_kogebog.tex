@@ -6,10 +6,12 @@
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
 \usepackage{xcookybooky}
-%\usepackage{chemformula}
-%\usepackage{chemstyle}
-%\usepackage{chemmacros}
-
+\usepackage{chemformula}
+\usepackage{chemstyle}
+\usepackage{chemmacros}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{enumitem}
 
 %\usepackage{ pbsi }
 
@@ -86,7 +88,9 @@
 		}
 				
 		\preparation{
-			 #7	
+%	        \begin{enumerate}[align=left]
+			#7	
+%			\end{enumerate}
 		}
 			
 				
@@ -103,8 +107,25 @@
 	\newcommand{\ruingredient}[3]{ \unit[#2]{#3} & #1 \\ }
 
 	% Kommando til at beskrive steps
-	\newcommand{\rustep}[1]{ \step #1}
+	\newcommand{\rustep}[1]{\step #1}
 
+% Renew the steps command to use RU logo.
+\renewcommand{\step}
+{
+	\lettrine
+	[%
+	lines=2,
+	lhang=0, % space into margin, value between 0 and 1
+	loversize=0.15, % enlarges the height of the capital
+	slope=0em,
+	findent=1em, % gap between capital and intended text
+	nindent=0em % shifts all intended lines, begining with the second line
+	]{\includegraphics[height=2ex]{ru-logo}}{}%
+}
+
+	% Kommando til ny sektion (frokost, morgenmad, osv)
+	\newcommand{\rusection}[1]{ \section{#1}}
+	
 % Opsætning af xcookybooky
 \setHeadlines {
 	inghead = Ingredienser,

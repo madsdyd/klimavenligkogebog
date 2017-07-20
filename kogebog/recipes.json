@@ -1,504 +1,1089 @@
 [
-    {"name":"Boller i Karry",
-    "desc":"Boller i Karry er en dejlig ret, som alle kan lide",
-    "content":[
-        {"id":"Kartofler", "amount":2},
-        {"id":"Ris", "amount":1},
-        {"id":"Agurk", "amount":2}
+  {
+    "name": "Boller i Karry",
+    "desc": "Boller i Karry er en dejlig ret, som alle kan lide",
+    "content": [
+      {
+        "id": "Kartofler",
+        "amount": 2
+      },
+      {
+        "id": "Ris",
+        "amount": 1
+      },
+      {
+        "id": "Agurk",
+        "amount": 2
+      }
     ],
-    "recipe":"Tag en stor gryde. \\Snit kartoflerne fint. Kog lortet\\Efter 30 minutter er det færdigt",
-      "persons":4,
-      "time": "1 time"
-    },
-	
-	{"name":"Bradepandeomelet",
-    "desc":"Denne ret kan benyttes som et proteinrigt alternativ til vegetarisk pålæg",
-    "content":[
-        {"id":"Kyllingefilet", "amount":0.450},
-		{"id":"Spinat", "amount":0.700},
-		{"id":"Æg", "amount":14},
-		{"id":"Tomater", "amount":8}
-       
-        
+    "recipe": "Tag en stor gryde. \\Snit kartoflerne fint. Kog lortet\\Efter 30 minutter er det færdigt",
+    "persons": 4,
+    "time": "1 time",
+    "meal": "Morgenmad"
+  },
+  {
+    "name": "Bradepandeomelet",
+    "desc": "Denne ret kan benyttes som et proteinrigt alternativ til vegetarisk pålæg",
+    "content": [
+      {
+        "id": "Kyllingefilet",
+        "amount": 0.450
+      },
+      {
+        "id": "Spinat",
+        "amount": 0.700
+      },
+      {
+        "id": "Æg",
+        "amount": 14
+      },
+      {
+        "id": "Tomater",
+        "amount": 8
+      }
     ],
-    "recipe":"Put den frosne spinat i en stor gryde med låg og varm den ved middelvarme. Hak tomaterne i små tern og put dem i gryden sammen med frø og krydderier (f.eks. lidt spidskommen og muskatnød). Sluk komfuret når spinaten er varm og smeltet.\\ Tænd ovnen på 200 grader (180 grader ved varmluft). Steg kyllingeternene på panden. Husk at kyllingen skal i ovnen, så den skal ikke være gennemstegt. Kødet må gerne være rosa. Når kyllingen er færdig blandes det i gryden sammen med resten af blandingen.\\ Pisk nu æggene godt sammen i en anden skål, massen skal være jævn og luftig.\\ Find en stor bradepande og dæk den med bagepapir eller smør den. Fordel herefter spinatblandingen jævnt og hæld æggemassen henover. Sæt det hele i ovnen og lad det bage i ca. 30-35 min.",
-      "persons":15,
-      "time": "35 minutter i ovnen"
-    },
-	{"name":"Bønnepostej",
-    "desc":"En let postej af bønner, der egner sig godt som fyld i sandwiches eller dip til grøntsager",
-    "content":[
-        {"id":"Kidneybønner", "amount":1.0},
-		{"id":"Karry", "amount":1.0},
-		{"id":"Hvidløg", "amount":1.5},
-		{"id":"Rødløg", "amount":0.05},
-		{"id":"Salt og peber", "amount":0}
-       
-        
+    "recipe": "Put den frosne spinat i en stor gryde med låg og varm den ved middelvarme. Hak tomaterne i små tern og put dem i gryden sammen med frø og krydderier (f.eks. lidt spidskommen og muskatnød). Sluk komfuret når spinaten er varm og smeltet.\\ Tænd ovnen på 200 grader (180 grader ved varmluft). Steg kyllingeternene på panden. Husk at kyllingen skal i ovnen, så den skal ikke være gennemstegt. Kødet må gerne være rosa. Når kyllingen er færdig blandes det i gryden sammen med resten af blandingen.\\ Pisk nu æggene godt sammen i en anden skål, massen skal være jævn og luftig.\\ Find en stor bradepande og dæk den med bagepapir eller smør den. Fordel herefter spinatblandingen jævnt og hæld æggemassen henover. Sæt det hele i ovnen og lad det bage i ca. 30-35 min.",
+    "persons": 15,
+    "time": "35 minutter i ovnen",
+    "meal": "Morgenmad"
+  },
+  {
+    "name": "Bønnepostej",
+    "desc": "En let postej af bønner, der egner sig godt som fyld i sandwiches eller dip til grøntsager",
+    "content": [
+      {
+        "id": "Kidneybønner",
+        "amount": 1.0
+      },
+      {
+        "id": "Karry",
+        "amount": 1.0
+      },
+      {
+        "id": "Hvidløg",
+        "amount": 1.5
+      },
+      {
+        "id": "Rødløg",
+        "amount": 0.05
+      },
+      {
+        "id": "Salt og peber",
+        "amount": 0
+      }
     ],
-	"recipe":"Start med at finde din stavblender eller foodprocessor frem, for hvis du skal mose bønner i hånden, så tager det lidt mere end 3 minutter. \\Hæld vandet fra bønnerne og skyl dem godt under rindende vand.\\Hæld bønner og karry i en skål og blend til du får en tyk, lyserød masse.\\ Pres hvidløgsfedene og skær rødlæget i små tern og vend begge dele i postejen. Smag til med salt og peber.",
-
-      "persons":4,
-      "time": "5 minutter"
-    },
-	{"name":"Ristede og spicy snackkikærter",
-    "desc":"Lækre kikærter, der enten kan spises som de er, eller bruges som sprød og krydret topping på en salat eller en wok. Kan også laves i glutenfri version, hvor majsmelet udelukkes",
-    "content":[
-        {"id":"Kikærter", "amount":1},
-		{"id":"Olivenolie", "amount":2},
-		{"id":"Majsmel", "amount":1},
-		{"id":"Salt", "amount":0.5},
-		{"id":"Spidskommen", "amount":1},
-		{"id":"Sød paprika", "amount":1}
-		
-       
-        
+    "recipe": "Start med at finde din stavblender eller foodprocessor frem, for hvis du skal mose bønner i hånden, så tager det lidt mere end 3 minutter. \\Hæld vandet fra bønnerne og skyl dem godt under rindende vand.\\Hæld bønner og karry i en skål og blend til du får en tyk, lyserød masse.\\ Pres hvidløgsfedene og skær rødlæget i små tern og vend begge dele i postejen. Smag til med salt og peber.",
+    "persons": 4,
+    "time": "5 minutter"
+  },
+  {
+    "name": "Ristede og spicy snackkikærter",
+    "desc": "Lækre kikærter, der enten kan spises som de er, eller bruges som sprød og krydret topping på en salat eller en wok. Kan også laves i glutenfri version, hvor majsmelet udelukkes",
+    "content": [
+      {
+        "id": "Kikærter",
+        "amount": 1
+      },
+      {
+        "id": "Olivenolie",
+        "amount": 2
+      },
+      {
+        "id": "Majsmel",
+        "amount": 1
+      },
+      {
+        "id": "Salt",
+        "amount": 0.5
+      },
+      {
+        "id": "Spidskommen",
+        "amount": 1
+      },
+      {
+        "id": "Sød paprika",
+        "amount": 1
+      }
     ],
-    "recipe":"Skyl kikærterne og lad dem dryppe godt af i en sigte.\\ Bland de øvrige ingredienser sammen og vend kikærterne i blandingen.\\ Spred de krydrede kikærterne ud på en bageplade med bagepapir og bag dem ved 220C i 20-30 min., eller indtil de virker sprøde – rør undervejs.\\Lad dem køle helt af på bagepladen.",
-      "persons":4,
-      "time": "30 minutter"
-    },
-	{"name":"Hummus",
-    "desc":"Tilbehør der både kan bruges som pålæg eller som dip. Kan med fordel tilsættes en smule spidskommen.",
-    "content":[
-        {"id":"Kikærter", "amount":1},
-		{"id":"Olivenolie", "amount":10},
-		{"id":"Citronsaft", "amount":2},
-		{"id":"Tahin", "amount":2},
-		{"id":"Presset hvidløg", "amount":2},
-		{"id":"Salt", "amount":1}
-		
-       
-        
+    "recipe": "Skyl kikærterne og lad dem dryppe godt af i en sigte.\\ Bland de øvrige ingredienser sammen og vend kikærterne i blandingen.\\ Spred de krydrede kikærterne ud på en bageplade med bagepapir og bag dem ved 220C i 20-30 min., eller indtil de virker sprøde – rør undervejs.\\Lad dem køle helt af på bagepladen.",
+    "persons": 4,
+    "time": "30 minutter",
+    "meal": "Snacks"
+  },
+  {
+    "name": "Hummus",
+    "desc": "Tilbehør der både kan bruges som pålæg eller som dip. Kan med fordel tilsættes en smule spidskommen.",
+    "content": [
+      {
+        "id": "Kikærter",
+        "amount": 1
+      },
+      {
+        "id": "Olivenolie",
+        "amount": 10
+      },
+      {
+        "id": "Citronsaft",
+        "amount": 2
+      },
+      {
+        "id": "Tahin",
+        "amount": 2
+      },
+      {
+        "id": "Presset hvidløg",
+        "amount": 2
+      },
+      {
+        "id": "Salt",
+        "amount": 1
+      }
     ],
-    "recipe":"Kikærterne skylles og dryppes godt af i en sigte.\\ Blend kikærterne med de øvrige ingredienser indtil konsistensen er som ønsket. \\Tilsæt evt. mere olie, hvis der er behov for det. Smag til med salt og citron.",
-      "persons":4,
-      "time": "12 minutter"
-    },
-	{"name":"Fyldte auberginer",
-    "desc":"En nem ret som kan bruges kombineret med andre retter som aftensmad. Kan eventuelt toppes med mozzarella",
-    "content":[
-        {"id":"Aubergine", "amount":2},
-		{"id":"Kikærter", "amount":2},
-		{"id":"Spinat", "amount":0.150},
-		{"id":"Løg", "amount":1},
-		{"id":"Ketchup", "amount":2},
-		{"id":"Karry", "amount":3},
-		{"id":"Olivenolie", "amount":4},
-		{"id":"Salt og peber", "amount":0}
-		
-       
-        
+    "recipe": "Kikærterne skylles og dryppes godt af i en sigte.\\ Blend kikærterne med de øvrige ingredienser indtil konsistensen er som ønsket. \\Tilsæt evt. mere olie, hvis der er behov for det. Smag til med salt og citron.",
+    "persons": 4,
+    "time": "12 minutter"
+  },
+  {
+    "name": "Fyldte auberginer",
+    "desc": "En nem ret som kan bruges kombineret med andre retter som aftensmad. Kan eventuelt toppes med mozzarella",
+    "content": [
+      {
+        "id": "Aubergine",
+        "amount": 2
+      },
+      {
+        "id": "Kikærter",
+        "amount": 2
+      },
+      {
+        "id": "Spinat",
+        "amount": 0.150
+      },
+      {
+        "id": "Løg",
+        "amount": 1
+      },
+      {
+        "id": "Ketchup",
+        "amount": 2
+      },
+      {
+        "id": "Karry",
+        "amount": 3
+      },
+      {
+        "id": "Olivenolie",
+        "amount": 4
+      },
+      {
+        "id": "Salt og peber",
+        "amount": 0
+      }
     ],
-    "recipe":"Rens og skær auberginerne over i halve og skær hvidløg og løget fint.\\ Dræn vandet fra kikærterne og udhul auberginen.\\ Kom olie på auberginebådene og sæt dem i en 180 grader varm ovn på et ovnfast fad, mens du steger fyldet.\\ Skær derefter kødet fra auberginen i små stykker og varm olien op i en gryde ved middelhøj varme. Tilsæt løg og hvidløg og steg dem til løgene er gennemsigtige, hvorefter karry tilsættes. Kom da kikærter og ketchup i gryden og lad det stege videre i 5 minutter.\\ Derefter tilsættes spinaten, som man lader stege indtil, at den enten er tøet op eller faldet sammen. \\Smag til med salt og peber og skær eventuelt mozzarellaen i tynde skiver. \\Tag auberginerne ud af ovnen og kom fyldet i og top evt med osten. \\Kom igen fadet ind i ovnen og bag i et kvarter til osten er smeltet og gyldenbrun eller man kan se at fyldet er blevet gyldenbrun. ",
-      "persons":3,
-      "time": "30 minutter"
-    },
-	{"name":"Indisk dhal",
-    "desc":"En ret der er ideel til mange mennesker på en gang. Kan passe sig selv det meste af foreberedelsestiden",
-    "content":[
-        {"id":"Hvidløg", "amount":4},
-		{"id":"Olivenolie", "amount":2},
-		{"id":"Karry", "amount":3},
-		{"id":"Spidskommen", "amount":3},
-		{"id":"Koriander (eller spidskommen om nødvendigt)", "amount":1.5},
-		{"id":"Kardemomme (evt.)", "amount":0.5},
-		{"id":"Chiliflager eller cayenne (evt.)", "amount":0.5},
-		{"id":"Vand", "amount":0.5},
-		{"id":"Grøntsagsbuillon", "amount":1},
-		{"id":"Revet ingefær", "amount":2},
-		{"id":"Røde linser", "amount":0.200},
-		{"id":"Dåsetomater", "amount":2}
-		
-       
-        
+    "recipe": "Rens og skær auberginerne over i halve og skær hvidløg og løget fint.\\ Dræn vandet fra kikærterne og udhul auberginen.\\ Kom olie på auberginebådene og sæt dem i en 180 grader varm ovn på et ovnfast fad, mens du steger fyldet.\\ Skær derefter kødet fra auberginen i små stykker og varm olien op i en gryde ved middelhøj varme. Tilsæt løg og hvidløg og steg dem til løgene er gennemsigtige, hvorefter karry tilsættes. Kom da kikærter og ketchup i gryden og lad det stege videre i 5 minutter.\\ Derefter tilsættes spinaten, som man lader stege indtil, at den enten er tøet op eller faldet sammen. \\Smag til med salt og peber og skær eventuelt mozzarellaen i tynde skiver. \\Tag auberginerne ud af ovnen og kom fyldet i og top evt med osten. \\Kom igen fadet ind i ovnen og bag i et kvarter til osten er smeltet og gyldenbrun eller man kan se at fyldet er blevet gyldenbrun. ",
+    "persons": 3,
+    "time": "30 minutter",
+    "meal": "Aftensmad"
+  },
+  {
+    "name": "Indisk dhal",
+    "desc": "En ret der er ideel til mange mennesker på en gang. Kan passe sig selv det meste af foreberedelsestiden",
+    "content": [
+      {
+        "id": "Hvidløg",
+        "amount": 4
+      },
+      {
+        "id": "Olivenolie",
+        "amount": 2
+      },
+      {
+        "id": "Karry",
+        "amount": 3
+      },
+      {
+        "id": "Spidskommen",
+        "amount": 3
+      },
+      {
+        "id": "Koriander (eller spidskommen om nødvendigt)",
+        "amount": 1.5
+      },
+      {
+        "id": "Kardemomme (evt.)",
+        "amount": 0.5
+      },
+      {
+        "id": "Chiliflager eller cayenne (evt.)",
+        "amount": 0.5
+      },
+      {
+        "id": "Vand",
+        "amount": 0.5
+      },
+      {
+        "id": "Grøntsagsbuillon",
+        "amount": 1
+      },
+      {
+        "id": "Revet ingefær",
+        "amount": 2
+      },
+      {
+        "id": "Røde linser",
+        "amount": 0.200
+      },
+      {
+        "id": "Dåsetomater",
+        "amount": 2
+      }
     ],
-    "recipe":"Varm olien i en stor gryde ved middel varme og tilsæt hvidløg og ingefær´og rør rundt i 1 minut, hvorefter karry, spidskommen, kardemomme, koriander, og chiliflager tilsættes.\\ svits krydderierne af i et minut under omrøring. \\Skyl linserne i en sigte og kom dem i gryden sammen med grøntsagsboullion og hakkede tomater. \\Lad det simre under låg i 45 minutter. Rør jævnligt i gryden og tilsæt evt. lidt vand, hvis den bliver for fast. \\Smag til med salt og server i dybe skåle med masser af koriander på toppen, raita og brød gerne naan.",
-      "persons":4,
-      "time": "1 time(med Raita)"
-    },
-	{"name":"Raita",
-    "desc":"En ret der fungerer som tilbehør til retten Indisk Dahl",
-    "content":[
-        {"id":"Yoghurt", "amount":0.2},
-		{"id":"Agurk", "amount":0.5},
-		{"id":"Hvidløg", "amount":1},
-		{"id":"Spidskommen", "amount":0.5},
-		{"id":"Salt og peber", "amount":0}
-       
-        
+    "recipe": "Varm olien i en stor gryde ved middel varme og tilsæt hvidløg og ingefær´og rør rundt i 1 minut, hvorefter karry, spidskommen, kardemomme, koriander, og chiliflager tilsættes.\\ svits krydderierne af i et minut under omrøring. \\Skyl linserne i en sigte og kom dem i gryden sammen med grøntsagsboullion og hakkede tomater. \\Lad det simre under låg i 45 minutter. Rør jævnligt i gryden og tilsæt evt. lidt vand, hvis den bliver for fast. \\Smag til med salt og server i dybe skåle med masser af koriander på toppen, raita og brød gerne naan.",
+    "persons": 4,
+    "time": "1 time(med Raita)",
+    "meal": "Aftensmad"
+  },
+  {
+    "name": "Raita",
+    "desc": "En ret der fungerer som tilbehør til retten Indisk Dahl",
+    "content": [
+      {
+        "id": "Yoghurt",
+        "amount": 0.2
+      },
+      {
+        "id": "Agurk",
+        "amount": 0.5
+      },
+      {
+        "id": "Hvidløg",
+        "amount": 1
+      },
+      {
+        "id": "Spidskommen",
+        "amount": 0.5
+      },
+      {
+        "id": "Salt og peber",
+        "amount": 0
+      }
     ],
-    "recipe":"Riv agurken groft og pres hvidløget.\\ Derefter blandes yoghurt, den groftrevede agurk, hvidløg og spidskommen, og smages til sidst til med salt og peber",
-      "persons":4,
-      "time": "1 time(med Dahl)"
-    },
-	{"name":"Wok med nudler",
-    "desc":"Indsæt beskrivelse her",
-    "content":[
-        {"id":"Porre", "amount":2},
-		{"id":"Hvidløg", "amount":3},
-		{"id":"Hvidkålshoved", "amount":0.25},
-		{"id":"Gulerødder", "amount":3},
-		{"id":"Sukkerærter (kan udelades)", "amount":0.200},
-		{"id":"Fuldkornsnudler", "amount":0.400},
-		{"id":"Fast tofu", "amount":0.300},
-		{"id":"Champignon", "amount":0.500},
-		{"id":"Kokosmælk", "amount":1},
-		{"id":"Kokosolie", "amount":2},
-		{"id":"Sambal Oelek", "amount":1.5},
-		{"id":"Fiskesovs (evt.)", "amount":1},
-		{"id":"Usprøjtede lime", "amount":1},
-		{"id":"Frisk koriander (evt.)", "amount":1},
-		{"id":"Peber", "amount":1},
-		{"id":"Soya", "amount":3}
-		
-		
-		
-       
-        
+    "recipe": "Riv agurken groft og pres hvidløget.\\ Derefter blandes yoghurt, den groftrevede agurk, hvidløg og spidskommen, og smages til sidst til med salt og peber",
+    "persons": 4,
+    "time": "1 time(med Dahl)"
+  },
+  {
+    "name": "Wok med nudler",
+    "desc": "Indsæt beskrivelse her",
+    "content": [
+      {
+        "id": "Porre",
+        "amount": 2
+      },
+      {
+        "id": "Hvidløg",
+        "amount": 3
+      },
+      {
+        "id": "Hvidkålshoved",
+        "amount": 0.25
+      },
+      {
+        "id": "Gulerødder",
+        "amount": 3
+      },
+      {
+        "id": "Sukkerærter (kan udelades)",
+        "amount": 0.200
+      },
+      {
+        "id": "Fuldkornsnudler",
+        "amount": 0.400
+      },
+      {
+        "id": "Fast tofu",
+        "amount": 0.300
+      },
+      {
+        "id": "Champignon",
+        "amount": 0.500
+      },
+      {
+        "id": "Kokosmælk",
+        "amount": 1
+      },
+      {
+        "id": "Kokosolie",
+        "amount": 2
+      },
+      {
+        "id": "Sambal Oelek",
+        "amount": 1.5
+      },
+      {
+        "id": "Fiskesovs (evt.)",
+        "amount": 1
+      },
+      {
+        "id": "Usprøjtede lime",
+        "amount": 1
+      },
+      {
+        "id": "Frisk koriander (evt.)",
+        "amount": 1
+      },
+      {
+        "id": "Peber",
+        "amount": 1
+      },
+      {
+        "id": "Soya",
+        "amount": 3
+      }
     ],
-    "recipe":"Start med at gøre alle grøntsagerne klar. Det vil sige skyl, porrer, kål, gulerødder, sukkerærter og champignoner, hvis nødvendigt. Skær derefter alle grøntsagerne i mundrette stykker. \\Skær tofuen så tofuen i små firkanter på ca. 1 gange 1 cm. Lav en marinade til tofuen bestående af 1 presset lime, 1 spsk soya, 1 spsk smeltet kokosolie og revet limeskal fra de 2 lime. Kom tofuen i marinaden og lad stå, mens resten af maden tilberedes. \\Varm kokosolien op i en wok eller tykbundet gryde ved høj varme og tilsæt porrer og presset hvidløg.\\ Tilsæt efterfølgende gulerødder og champignon og steg et par minutter. Tilsæt da resten af grøntsagerne og steg yderligere 5 minutter.\\ Tilsæt kokosmælk og eventuel 1 dl vand, hvis der ønskes mere sovs. \\Kom til sidst sambal oelek, fiskesovs, limejuice og halvdelen af den friske, hakkede koriander i wokken. \\Kom låg på wokken og lad koge, mens tofuen steges på en pande ved middelhøj varme. \\Bland tofuen med resten af wokken og server med nudler kogt efter anvisning på pakken og friskhakket koriander ved siden af.",
-      "persons":5,
-      "time": "1 time"
-    },
-	{"name":"Hurtig pastaret med citron og svampe",
-    "desc":"Nem pastaret. Sæssonsvarende svampe kan med fordel benyttes. Retten kan også spises med revet parmesan til.",
-    "content":[
-        {"id":"Løg", "amount":1},
-		{"id":"Hvidløg", "amount":2},
-		{"id":"Madlavningsfløde med lav fedtprocent", "amount":0.25},
-		{"id":"Blandede svampe", "amount":0.5},
-		{"id":"Citron", "amount":1},
-		{"id":"Spinat", "amount":0.200},
-		{"id":"Timian", "amount":2},
-		{"id":"Olivenolie", "amount":2},
-		{"id":"Hvedemel", "amount":0.015},
-		{"id":"Persille", "amount":1},
-		{"id":"Salt og peber", "amount":0}
-		
-		
-		
-       
-        
+    "recipe": "Start med at gøre alle grøntsagerne klar. Det vil sige skyl, porrer, kål, gulerødder, sukkerærter og champignoner, hvis nødvendigt. Skær derefter alle grøntsagerne i mundrette stykker. \\Skær tofuen så tofuen i små firkanter på ca. 1 gange 1 cm. Lav en marinade til tofuen bestående af 1 presset lime, 1 spsk soya, 1 spsk smeltet kokosolie og revet limeskal fra de 2 lime. Kom tofuen i marinaden og lad stå, mens resten af maden tilberedes. \\Varm kokosolien op i en wok eller tykbundet gryde ved høj varme og tilsæt porrer og presset hvidløg.\\ Tilsæt efterfølgende gulerødder og champignon og steg et par minutter. Tilsæt da resten af grøntsagerne og steg yderligere 5 minutter.\\ Tilsæt kokosmælk og eventuel 1 dl vand, hvis der ønskes mere sovs. \\Kom til sidst sambal oelek, fiskesovs, limejuice og halvdelen af den friske, hakkede koriander i wokken. \\Kom låg på wokken og lad koge, mens tofuen steges på en pande ved middelhøj varme. \\Bland tofuen med resten af wokken og server med nudler kogt efter anvisning på pakken og friskhakket koriander ved siden af.",
+    "persons": 5,
+    "time": "1 time"
+  },
+  {
+    "name": "Hurtig pastaret med citron og svampe",
+    "desc": "Nem pastaret. Sæssonsvarende svampe kan med fordel benyttes. Retten kan også spises med revet parmesan til.",
+    "content": [
+      {
+        "id": "Løg",
+        "amount": 1
+      },
+      {
+        "id": "Hvidløg",
+        "amount": 2
+      },
+      {
+        "id": "Madlavningsfløde med lav fedtprocent",
+        "amount": 0.25
+      },
+      {
+        "id": "Blandede svampe",
+        "amount": 0.5
+      },
+      {
+        "id": "Citron",
+        "amount": 1
+      },
+      {
+        "id": "Spinat",
+        "amount": 0.200
+      },
+      {
+        "id": "Timian",
+        "amount": 2
+      },
+      {
+        "id": "Olivenolie",
+        "amount": 2
+      },
+      {
+        "id": "Hvedemel",
+        "amount": 0.015
+      },
+      {
+        "id": "Persille",
+        "amount": 1
+      },
+      {
+        "id": "Salt og peber",
+        "amount": 0
+      }
     ],
-    "recipe":"Start med at hakke løg og presse hvidløget og derefter rens og skær svampene i mundrette stykker, og derefter start med at koge pastaen efter anvisning på posen.\\ Steg hvidløg og løg ved middelhøj varme, indtil løget bliver gennemsigtig. Tilsæt svampe og steg i 5 minutter, mens du laver en meljævning bestående af 1 spsk og 7 spsk vand som rystes sammen. \\Kom fløden, revet citronskal, timian og halvdelen af meljævningen i. Reguler konsistensen af sovsen ved at tilsætte henholdsvis vand eller mere meljævning. \\Når rette konsistens er opnået tilsæt da spinat, revet parmesan og hakket persille. Smag til med salt, peber og citronjuice og kom pastaen op i sovsen.",
-      "persons":4,
-      "time": "30 minutter"
-    },
-	{"name":"Ærtesuppe med mynte og hvidløgsbrød",
-    "desc":"Indsæt beskrivelse her",
-    "content":[
-        {"id":"Frosne ærter", "amount":0.500},
-		{"id":"Kokosmælk", "amount":1},
-		{"id":"Grøntsagsbuillon", "amount":1},
-		{"id":"Mynte", "amount":1},
-		{"id":"Løg", "amount":1},
-		{"id":"Hvidløg", "amount":5},
-		{"id":"Flute", "amount":1},
-		{"id":"Olivenolie", "amount":0.00},
-		{"id":"Salt og peber", "amount":0}
-		
-       
-        
+    "recipe": "Start med at hakke løg og presse hvidløget og derefter rens og skær svampene i mundrette stykker, og derefter start med at koge pastaen efter anvisning på posen.\\ Steg hvidløg og løg ved middelhøj varme, indtil løget bliver gennemsigtig. Tilsæt svampe og steg i 5 minutter, mens du laver en meljævning bestående af 1 spsk og 7 spsk vand som rystes sammen. \\Kom fløden, revet citronskal, timian og halvdelen af meljævningen i. Reguler konsistensen af sovsen ved at tilsætte henholdsvis vand eller mere meljævning. \\Når rette konsistens er opnået tilsæt da spinat, revet parmesan og hakket persille. Smag til med salt, peber og citronjuice og kom pastaen op i sovsen.",
+    "persons": 4,
+    "time": "30 minutter"
+  },
+  {
+    "name": "Ærtesuppe med mynte og hvidløgsbrød",
+    "desc": "Indsæt beskrivelse her",
+    "content": [
+      {
+        "id": "Frosne ærter",
+        "amount": 0.500
+      },
+      {
+        "id": "Kokosmælk",
+        "amount": 1
+      },
+      {
+        "id": "Grøntsagsbuillon",
+        "amount": 1
+      },
+      {
+        "id": "Mynte",
+        "amount": 1
+      },
+      {
+        "id": "Løg",
+        "amount": 1
+      },
+      {
+        "id": "Hvidløg",
+        "amount": 5
+      },
+      {
+        "id": "Flute",
+        "amount": 1
+      },
+      {
+        "id": "Olivenolie",
+        "amount": 0.00
+      },
+      {
+        "id": "Salt og peber",
+        "amount": 0
+      }
     ],
-    "recipe":"Skær løget og pres hvidløgene. Steg løget og 1/3 del af hvidløget i olien ved middelhøj varme i 2 minutter.\\ Tilsæt kokosmælk, 1/2 liter kogende vand, de frosne ærter og bouillonterningen. Kom låg på gryden og skru ned for varmen.\\ Mens suppen koger skær brødet i passende stykker og kom olivenolie, resten af hvidløget og salt på stykkerne, hvorefter de kommer i en ovn på 180 grader varmluft i 5-10 minutter.\\ Kom mynten i suppen, blend og smag til med salt og peber. ",
-      "persons":3,
-      "time": "Ukendt"
-	  },
-	  {"name":"Bajer-Torsk",
-    "desc":"En ret der på trods af den inkluderer fisk, stadig er  klimavenlig. Årstidssvarende grøntsager kan med fordel bruges.",
-    "content":[
-        {"id":"Torsk", "amount":0.600},
-		{"id":"Hvidløg", "amount":1},
-		{"id":"Finthakket persille", "amount":4},
-		{"id":"Estragon", "amount":1},
-		{"id":"Pilsnerøl", "amount":1},
-		{"id":"Forskellige grøntsager (f.eks. 1/4 af hver af gulerøder,broccoli,squash og rødløg)", "amount":0.8},
-		{"id":"Olivenolie", "amount":0.6},
-		{"id":"Citronsaft", "amount":2},
-		{"id":"Salt", "amount":0},
-		{"id":"Smør", "amount":0.025},
-		{"id":"Flydende fedtstof", "amount":2},
-		{"id":"Hvedemel", "amount":0.02},
-		{"id":"Fiskebouillon", "amount":1},
-		{"id":"Sennep", "amount":1},
-		{"id":"Kapers", "amount":1},
-		{"id":"Madlavningsfløde", "amount":0}
-		
-       
-        
+    "recipe": "Skær løget og pres hvidløgene. Steg løget og 1/3 del af hvidløget i olien ved middelhøj varme i 2 minutter.\\ Tilsæt kokosmælk, 1/2 liter kogende vand, de frosne ærter og bouillonterningen. Kom låg på gryden og skru ned for varmen.\\ Mens suppen koger skær brødet i passende stykker og kom olivenolie, resten af hvidløget og salt på stykkerne, hvorefter de kommer i en ovn på 180 grader varmluft i 5-10 minutter.\\ Kom mynten i suppen, blend og smag til med salt og peber. ",
+    "persons": 3,
+    "time": "Ukendt"
+  },
+  {
+    "name": "Bajer-Torsk",
+    "desc": "En ret der på trods af den inkluderer fisk, stadig er  klimavenlig. Årstidssvarende grøntsager kan med fordel bruges.",
+    "content": [
+      {
+        "id": "Torsk",
+        "amount": 0.600
+      },
+      {
+        "id": "Hvidløg",
+        "amount": 1
+      },
+      {
+        "id": "Finthakket persille",
+        "amount": 4
+      },
+      {
+        "id": "Estragon",
+        "amount": 1
+      },
+      {
+        "id": "Pilsnerøl",
+        "amount": 1
+      },
+      {
+        "id": "Forskellige grøntsager (f.eks. 1/4 af hver af gulerøder,broccoli,squash og rødløg)",
+        "amount": 0.8
+      },
+      {
+        "id": "Olivenolie",
+        "amount": 0.6
+      },
+      {
+        "id": "Citronsaft",
+        "amount": 2
+      },
+      {
+        "id": "Salt",
+        "amount": 0
+      },
+      {
+        "id": "Smør",
+        "amount": 0.025
+      },
+      {
+        "id": "Flydende fedtstof",
+        "amount": 2
+      },
+      {
+        "id": "Hvedemel",
+        "amount": 0.02
+      },
+      {
+        "id": "Fiskebouillon",
+        "amount": 1
+      },
+      {
+        "id": "Sennep",
+        "amount": 1
+      },
+      {
+        "id": "Kapers",
+        "amount": 1
+      },
+      {
+        "id": "Madlavningsfløde",
+        "amount": 0
+      }
     ],
-    "recipe":"Marinaden (som består af hvidløget, persillen, estragonen og øllet) røres sammen, og den rengjorte torsk lægges i, og sættes i køleskabet for at trække i en time.\\ Grøntsagerne renses også og vendes med olie, salt og citronsaft.\\ Torsken tages derefter ud af marinaden, og lægges ovenpå grøntsagerne, og sammen bages de i 25-30 min i en 225oC varm ovn.\\Imens grøntsagerne og fisken bages laves sovsen. Fedtstof smeltes og melet tilsættes og “steges af,” fiskeboullionen tilsættes lidt af gangen under omrøring.\\ Sennepen og madlavningsfløden tilsættes imens den koger, og til sidst røres kapersene i.",
-      "persons":4,
-      "time": "2 timer"
-	  },
-	  {"name":"Couscous med gulerøder, squash og turbo-tomatsauce",
-    "desc":"Indsæt beskrivelse her",
-    "content":[
-        {"id":"Rødløg", "amount":2},
-		{"id":"Gulerødder", "amount":3},
-		{"id":"Squash", "amount":1},
-		{"id":"Hvidløg", "amount":1},
-		{"id":"Olivenolie", "amount":1},
-		{"id":"Stødt spidskommen eller stødt koriander", "amount":2},
-		{"id":"Laurbærblade", "amount":1},
-		{"id":"Dåsetomater", "amount":0.4},
-		{"id":"Couscous", "amount":2},
-		{"id":"Vand", "amount":0.25},
-		{"id":"Salt", "amount":1},
-		{"id":"Salt og peber", "amount":0}
-		
-       
-        
+    "recipe": "Marinaden (som består af hvidløget, persillen, estragonen og øllet) røres sammen, og den rengjorte torsk lægges i, og sættes i køleskabet for at trække i en time.\\ Grøntsagerne renses også og vendes med olie, salt og citronsaft.\\ Torsken tages derefter ud af marinaden, og lægges ovenpå grøntsagerne, og sammen bages de i 25-30 min i en 225oC varm ovn.\\Imens grøntsagerne og fisken bages laves sovsen. Fedtstof smeltes og melet tilsættes og “steges af,” fiskeboullionen tilsættes lidt af gangen under omrøring.\\ Sennepen og madlavningsfløden tilsættes imens den koger, og til sidst røres kapersene i.",
+    "persons": 4,
+    "time": "2 timer"
+  },
+  {
+    "name": "Couscous med gulerøder, squash og turbo-tomatsauce",
+    "desc": "Indsæt beskrivelse her",
+    "content": [
+      {
+        "id": "Rødløg",
+        "amount": 2
+      },
+      {
+        "id": "Gulerødder",
+        "amount": 3
+      },
+      {
+        "id": "Squash",
+        "amount": 1
+      },
+      {
+        "id": "Hvidløg",
+        "amount": 1
+      },
+      {
+        "id": "Olivenolie",
+        "amount": 1
+      },
+      {
+        "id": "Stødt spidskommen eller stødt koriander",
+        "amount": 2
+      },
+      {
+        "id": "Laurbærblade",
+        "amount": 1
+      },
+      {
+        "id": "Dåsetomater",
+        "amount": 0.4
+      },
+      {
+        "id": "Couscous",
+        "amount": 2
+      },
+      {
+        "id": "Vand",
+        "amount": 0.25
+      },
+      {
+        "id": "Salt",
+        "amount": 1
+      },
+      {
+        "id": "Salt og peber",
+        "amount": 0
+      }
     ],
-    "recipe":"Bland couscoussen med salt i en gryde med tætsluttende låg. Hæld kogende vand på. Kom låget på gryden og lad den stå 15 minutter, uden du løfter låget. Der skal ikke være varme under gryden.\\ Skræl og skær gulerødderne i 0.5 cm tynde skiver på skrå. Skær squashen i mindre stykker eller i halve skiver. Pil og skær løget i tynde både. Pil hvidløgsfeddet. Hvis det er stort, så skær det i to stykker, så der er plads til stykkerne i din hvidløgspresser. \\Hæld olien på panden. Kom grøntsagerne på, når den er varm. Steg under omrøring i 3 minutter. \\Pres hvidløg over og kom spidskommen i. Steg videre under jævnlig omrøring 2 minutter mere. \\Tilsæt tomat og laurbær. Kog videre under låg ved lav varme ca. 5 minutter under jævnlig omrøring. Smag til.",
-      "persons":4,
-      "time": "30 minutter"
-	  },
-	   {"name":"Fennikelgryde",
-    "desc":"Som variation kan smøret erstattes med olie og kokosmælk, eller risene med linser for mere protein",
-    "content":[
-        {"id":"Smør", "amount":0.01},
-		{"id":"Fennikler i mindre stykker", "amount":4},
-		{"id":"Løg", "amount":2},
-		{"id":"Kidneybønner", "amount":1},
-		{"id":"Tomatsuppe", "amount":0.5},
-		{"id":"Salt", "amount":1},
-		{"id":"Grofthakkede, friske basilikumblade", "amount":0.5},
-		{"id":"Dåsetomater", "amount":0.4},
-		{"id":"Ris", "amount":0.320}	
-       
-        
+    "recipe": "Bland couscoussen med salt i en gryde med tætsluttende låg. Hæld kogende vand på. Kom låget på gryden og lad den stå 15 minutter, uden du løfter låget. Der skal ikke være varme under gryden.\\ Skræl og skær gulerødderne i 0.5 cm tynde skiver på skrå. Skær squashen i mindre stykker eller i halve skiver. Pil og skær løget i tynde både. Pil hvidløgsfeddet. Hvis det er stort, så skær det i to stykker, så der er plads til stykkerne i din hvidløgspresser. \\Hæld olien på panden. Kom grøntsagerne på, når den er varm. Steg under omrøring i 3 minutter. \\Pres hvidløg over og kom spidskommen i. Steg videre under jævnlig omrøring 2 minutter mere. \\Tilsæt tomat og laurbær. Kog videre under låg ved lav varme ca. 5 minutter under jævnlig omrøring. Smag til.",
+    "persons": 4,
+    "time": "30 minutter"
+  },
+  {
+    "name": "Fennikelgryde",
+    "desc": "Som variation kan smøret erstattes med olie og kokosmælk, eller risene med linser for mere protein",
+    "content": [
+      {
+        "id": "Smør",
+        "amount": 0.01
+      },
+      {
+        "id": "Fennikler i mindre stykker",
+        "amount": 4
+      },
+      {
+        "id": "Løg",
+        "amount": 2
+      },
+      {
+        "id": "Kidneybønner",
+        "amount": 1
+      },
+      {
+        "id": "Tomatsuppe",
+        "amount": 0.5
+      },
+      {
+        "id": "Salt",
+        "amount": 1
+      },
+      {
+        "id": "Grofthakkede, friske basilikumblade",
+        "amount": 0.5
+      },
+      {
+        "id": "Dåsetomater",
+        "amount": 0.4
+      },
+      {
+        "id": "Ris",
+        "amount": 0.320
+      }
     ],
-    "recipe":"Lad smørret smelte i en gryde ved kraftig varme, men uden at det bruner. Svits fennikel og groft hakkede løg i ca. 3 min.\\ Rør afdryppede bønner og tomatsuppe i og lad retten koge ved svag varme og under låg i ca. 3 min. - eller til grøntsagerne er møre.\\ Tilsæt basilikum og salt. Smag til og server fennikelgryde sammen med nykogte ris.",
-      "persons":4,
-      "time": "30 minutter"
-	  },
-	   {"name":"Ovnbagt ratatouille",
-    "desc":"Indsæt beskrivelse her",
-    "content":[
-        {"id":"Løg", "amount":2},
-		{"id":"Peberfrugt", "amount":2},
-		{"id":"Courgette", "amount":0.4},
-		{"id":"Aubergine", "amount":1},
-		{"id":"Olivenolie (til grøntsagerne)", "amount":5},
-		{"id":"Salt og peber", "amount":0},
-		{"id":"Olivenolie (til tomatsaucen)", "amount":2},
-		{"id":"Hvidløg", "amount":3},
-		{"id":"Dåsetomater", "amount":2},
-		{"id":"Laurbærblade", "amount":0},
-		{"id":"Timiankvist", "amount":0},
-		{"id":"Sukker", "amount":0}
-		
-       
-        
+    "recipe": "Lad smørret smelte i en gryde ved kraftig varme, men uden at det bruner. Svits fennikel og groft hakkede løg i ca. 3 min.\\ Rør afdryppede bønner og tomatsuppe i og lad retten koge ved svag varme og under låg i ca. 3 min. - eller til grøntsagerne er møre.\\ Tilsæt basilikum og salt. Smag til og server fennikelgryde sammen med nykogte ris.",
+    "persons": 4,
+    "time": "30 minutter"
+  },
+  {
+    "name": "Ovnbagt ratatouille",
+    "desc": "Indsæt beskrivelse her",
+    "content": [
+      {
+        "id": "Løg",
+        "amount": 2
+      },
+      {
+        "id": "Peberfrugt",
+        "amount": 2
+      },
+      {
+        "id": "Courgette",
+        "amount": 0.4
+      },
+      {
+        "id": "Aubergine",
+        "amount": 1
+      },
+      {
+        "id": "Olivenolie (til grøntsagerne)",
+        "amount": 5
+      },
+      {
+        "id": "Salt og peber",
+        "amount": 0
+      },
+      {
+        "id": "Olivenolie (til tomatsaucen)",
+        "amount": 2
+      },
+      {
+        "id": "Hvidløg",
+        "amount": 3
+      },
+      {
+        "id": "Dåsetomater",
+        "amount": 2
+      },
+      {
+        "id": "Laurbærblade",
+        "amount": 0
+      },
+      {
+        "id": "Timiankvist",
+        "amount": 0
+      },
+      {
+        "id": "Sukker",
+        "amount": 0
+      }
     ],
-	
-    "recipe":"Forvarm ovnen til 190 grader. Skær løgene i tykke stykker fra rod til top. Skær peberfrugterne i stykker på 2-3 cm. Hvis courgetterne er meget store, så halver dem på langs før de skæres i tykke skiver. Skær auberginen i 2-3 cm terninger. \\Put grønsagerne i et stort ovnfast fad, tilføj olivenolien og masser af salt og peber og bland godt sammen. Bag det i 1-1.5 time, rør rundt i det en eller to gange, indtil grønsagerne er møre, mindre og begynder at se brune ud. \\I mellemtiden laves tomatsaucen. Varm olivenolien i en stor stegepande på mellem-til-lav varme. Tilføj hvidløg og lad det syde lidt i et minut uden at brunes. Tilføj så tomaterne med saft, lauerbærblad og timiankvist. Koges let i omkring 45 minutter, rør rundt ofte og knus tomaterne med en gaffel. Smag til med salt og peber, når du har en tyk, frugtkødssovs. \\Når grønsagerne er bagt, tilføj tomatsaucen, bland godt og sæt tilbage i ovnen i 10 minutter, indtil det bobler og dufter. Mens det stadig er varmt, rør rundt og krydr med oregano/timian. Serveres varm eller kold, men ikke lunken.",
-      "persons":4,
-      "time": "1,5 time"
-	  },
-	  {"name":"Kartoffel-porresuppe",
-    "desc":"Velegnet til store arrangementer. Kan med fordel pyntes med persille",
-    "content":[
-        {"id":"Kartofler", "amount":153.8},
-		{"id":"Porre", "amount":25},
-		{"id":"Løg", "amount":12},
-		{"id":"Vand", "amount":13},
-		{"id":"Mælk", "amount":6},
-		{"id":"Grøntsagsbuillon", "amount":20},
-		{"id":"Salt og peber", "amount":0},
-		{"id":"Madlavningsolie", "amount":0},
-		{"id":"Flute", "amount":0}
-		
-		
-       
-        
+    "recipe": "Forvarm ovnen til 190 grader. Skær løgene i tykke stykker fra rod til top. Skær peberfrugterne i stykker på 2-3 cm. Hvis courgetterne er meget store, så halver dem på langs før de skæres i tykke skiver. Skær auberginen i 2-3 cm terninger. \\Put grønsagerne i et stort ovnfast fad, tilføj olivenolien og masser af salt og peber og bland godt sammen. Bag det i 1-1.5 time, rør rundt i det en eller to gange, indtil grønsagerne er møre, mindre og begynder at se brune ud. \\I mellemtiden laves tomatsaucen. Varm olivenolien i en stor stegepande på mellem-til-lav varme. Tilføj hvidløg og lad det syde lidt i et minut uden at brunes. Tilføj så tomaterne med saft, lauerbærblad og timiankvist. Koges let i omkring 45 minutter, rør rundt ofte og knus tomaterne med en gaffel. Smag til med salt og peber, når du har en tyk, frugtkødssovs. \\Når grønsagerne er bagt, tilføj tomatsaucen, bland godt og sæt tilbage i ovnen i 10 minutter, indtil det bobler og dufter. Mens det stadig er varmt, rør rundt og krydr med oregano/timian. Serveres varm eller kold, men ikke lunken.",
+    "persons": 4,
+    "time": "1,5 time"
+  },
+  {
+    "name": "Kartoffel-porresuppe",
+    "desc": "Velegnet til store arrangementer. Kan med fordel pyntes med persille",
+    "content": [
+      {
+        "id": "Kartofler",
+        "amount": 153.8
+      },
+      {
+        "id": "Porre",
+        "amount": 25
+      },
+      {
+        "id": "Løg",
+        "amount": 12
+      },
+      {
+        "id": "Vand",
+        "amount": 13
+      },
+      {
+        "id": "Mælk",
+        "amount": 6
+      },
+      {
+        "id": "Grøntsagsbuillon",
+        "amount": 20
+      },
+      {
+        "id": "Salt og peber",
+        "amount": 0
+      },
+      {
+        "id": "Madlavningsolie",
+        "amount": 0
+      },
+      {
+        "id": "Flute",
+        "amount": 0
+      }
     ],
-	
-    "recipe":"Løg, porrer og kartofler skæres i stykker.\\ Grøntsagerne svitser i lidt olie i en stor gryde.\\ Tilsæt vand, mælk og bouillon. Lad det hele koge i 20 minutter.\\ Blend suppen og smag til med salt og peber.\\ Server med lidt porre i strimler og lidt persille samt flutes.",
-      "persons":50,
-      "time": "30 minutter"
-	  },
-	    {"name":"Burger",
-    "desc":"Indsæt beskrivelse her",
-    "content":[
-        {"id":"Linser", "amount":150},
-		{"id":"Vand", "amount":4.5},
-		{"id":"Gulerødder", "amount":1.5},
-		{"id":"Salt", "amount":0.5},
-		{"id":"Porre", "amount":0.75},
-		{"id":"Havregryn", "amount":20},
-		{"id":"Kikærtemel", "amount":1.675},
-		{"id":"Soya", "amount":1},
-		{"id":"Citronsaft", "amount":3},
-		{"id":"Tomater", "amount":2.4},
-		{"id":"Rødløg", "amount":1.2},
-		{"id":"Salat", "amount":0.5},
-		{"id":"Agurk", "amount":1},
-		{"id":"Burgerboller", "amount":5},
-		{"id":"Persille", "amount":0}
-		
-		
-       
-        
+    "recipe": "Løg, porrer og kartofler skæres i stykker.\\ Grøntsagerne svitser i lidt olie i en stor gryde.\\ Tilsæt vand, mælk og bouillon. Lad det hele koge i 20 minutter.\\ Blend suppen og smag til med salt og peber.\\ Server med lidt porre i strimler og lidt persille samt flutes.",
+    "persons": 50,
+    "time": "30 minutter"
+  },
+  {
+    "name": "Burger",
+    "desc": "Indsæt beskrivelse her",
+    "content": [
+      {
+        "id": "Linser",
+        "amount": 150
+      },
+      {
+        "id": "Vand",
+        "amount": 4.5
+      },
+      {
+        "id": "Gulerødder",
+        "amount": 1.5
+      },
+      {
+        "id": "Salt",
+        "amount": 0.5
+      },
+      {
+        "id": "Porre",
+        "amount": 0.75
+      },
+      {
+        "id": "Havregryn",
+        "amount": 20
+      },
+      {
+        "id": "Kikærtemel",
+        "amount": 1.675
+      },
+      {
+        "id": "Soya",
+        "amount": 1
+      },
+      {
+        "id": "Citronsaft",
+        "amount": 3
+      },
+      {
+        "id": "Tomater",
+        "amount": 2.4
+      },
+      {
+        "id": "Rødløg",
+        "amount": 1.2
+      },
+      {
+        "id": "Salat",
+        "amount": 0.5
+      },
+      {
+        "id": "Agurk",
+        "amount": 1
+      },
+      {
+        "id": "Burgerboller",
+        "amount": 5
+      },
+      {
+        "id": "Persille",
+        "amount": 0
+      }
     ],
-	
-    "recipe":"Skyl linserne og kog dem i vandet ca. 15-20 min. Blend dem med en stavblender til en grov masse, med stykker af hele linser.\\ Bland massen med reven gulerod, porre, salt, havregryn og kikærtemel. Lad farsen trække i et par minutter og bland de resterende ingreidenser i. Tilsæt evt. mere væske.\\ Formes til 4 store eller 6 mindre burgerbøffer og steges på en pande i ca. 3 minutter på hver side.\\ Server i lune burgerboller med tilbehør",
-      "persons":5,
-      "time": "30 minutter"
-	  },
-	  {"name":"Chili sin carne",
-    "desc":"God opskrift til større arrangementer.",
-    "content":[
-        {"id":"Løg", "amount":1},
-		{"id":"Hvidløg", "amount":2},
-		{"id":"Madlavningsolie", "amount":1},
-		{"id":"Hakkede tomater", "amount":13},
-		{"id":"Tomatpuré", "amount":2},
-		{"id":"Soyaprodukt, f.eks. gourmetfars", "amount":0.3},
-		{"id":"Grøntsagsbuillon", "amount":1},
-		{"id":"Laurbærblade", "amount":0},
-		{"id":"Sambal Oelek", "amount":1},
-		{"id":"Stødt spidskommen", "amount":0},
-		{"id":"Kanel", "amount":1},
-		{"id":"Kidneybønner", "amount":1},
-		{"id":"Salt og peber", "amount":1},
-		{"id":"Couscous", "amount":3.5}
-		
-		
-       
-        
+    "recipe": "Skyl linserne og kog dem i vandet ca. 15-20 min. Blend dem med en stavblender til en grov masse, med stykker af hele linser.\\ Bland massen med reven gulerod, porre, salt, havregryn og kikærtemel. Lad farsen trække i et par minutter og bland de resterende ingreidenser i. Tilsæt evt. mere væske.\\ Formes til 4 store eller 6 mindre burgerbøffer og steges på en pande i ca. 3 minutter på hver side.\\ Server i lune burgerboller med tilbehør",
+    "persons": 5,
+    "time": "30 minutter",
+    "meal": "Frokost"
+  },
+  {
+    "name": "Chili sin carne",
+    "desc": "God opskrift til større arrangementer.",
+    "content": [
+      {
+        "id": "Løg",
+        "amount": 1
+      },
+      {
+        "id": "Hvidløg",
+        "amount": 2
+      },
+      {
+        "id": "Madlavningsolie",
+        "amount": 1
+      },
+      {
+        "id": "Hakkede tomater",
+        "amount": 13
+      },
+      {
+        "id": "Tomatpuré",
+        "amount": 2
+      },
+      {
+        "id": "Soyaprodukt, f.eks. gourmetfars",
+        "amount": 0.3
+      },
+      {
+        "id": "Grøntsagsbuillon",
+        "amount": 1
+      },
+      {
+        "id": "Laurbærblade",
+        "amount": 0
+      },
+      {
+        "id": "Sambal Oelek",
+        "amount": 1
+      },
+      {
+        "id": "Stødt spidskommen",
+        "amount": 0
+      },
+      {
+        "id": "Kanel",
+        "amount": 1
+      },
+      {
+        "id": "Kidneybønner",
+        "amount": 1
+      },
+      {
+        "id": "Salt og peber",
+        "amount": 1
+      },
+      {
+        "id": "Couscous",
+        "amount": 3.5
+      }
     ],
-	
-    "recipe":"Skræl og striml almindeligt løg og hvidløg. Steg løgene i lidt olie på svag varme. \\Tilsæt hakkede tomater, tomatpuré, soyaprodukt, bouillonterning, krydderier samt kidneybønner med deres kogevand.\\ Lad det simre ca. fem minutter og smag til med salt og peber.\\ Server med couscous",
-      "persons":7,
-      "time": "30 minutter"
-	  },
-	   {"name":"Citronglaseret broccoli",
-    "desc":"INDSÆT BESKRIVELSE HER.",
-    "content":[
-        {"id":"Olivenolie", "amount":2},
-		{"id":"Parmesanost", "amount":0.050},
-		{"id":"Citrones saft og fintrevede skal", "amount":0.5},
-		{"id":"Salt", "amount":0},
-		{"id":"Vand", "amount":0.015},
-		{"id":"Rørsukker", "amount":0.5},
-		{"id":"Sort kværnet peber", "amount":0},
-		{"id":"Broccoli", "amount":0.35}
-		
-		
-		
-       
-        
+    "recipe": "Skræl og striml almindeligt løg og hvidløg. Steg løgene i lidt olie på svag varme. \\Tilsæt hakkede tomater, tomatpuré, soyaprodukt, bouillonterning, krydderier samt kidneybønner med deres kogevand.\\ Lad det simre ca. fem minutter og smag til med salt og peber.\\ Server med couscous",
+    "persons": 7,
+    "time": "30 minutter"
+  },
+  {
+    "name": "Citronglaseret broccoli",
+    "desc": "INDSÆT BESKRIVELSE HER.",
+    "content": [
+      {
+        "id": "Olivenolie",
+        "amount": 2
+      },
+      {
+        "id": "Parmesanost",
+        "amount": 0.050
+      },
+      {
+        "id": "Citrones saft og fintrevede skal",
+        "amount": 0.5
+      },
+      {
+        "id": "Salt",
+        "amount": 0
+      },
+      {
+        "id": "Vand",
+        "amount": 0.015
+      },
+      {
+        "id": "Rørsukker",
+        "amount": 0.5
+      },
+      {
+        "id": "Sort kværnet peber",
+        "amount": 0
+      },
+      {
+        "id": "Broccoli",
+        "amount": 0.35
+      }
     ],
-	
-    "recipe":"Kålen deles i grove buketter og svinges i varm olie et par minutter.\\ Sukker, vand, citronskal og saft kommes ved og gryden dækkes med låg.\\ Damp i 2 minutter til kålen er sprødmør, og smag til med salt og kværnet sort peber.\\ Server drysset med parmesan og spis godt brød til.",
-      "persons":4,
-      "time": "30 minutter"
-	  },
-	   {"name":"Bønnegryde med majs og feta",
-    "desc":"OPSKRIFTEN ER PÅ MIDLERTIDIG STANDBY GRUNDET LEMFÆLDIG OMGANG MED ENHEDER",
-    "content":[
-        {"id":"Hakkede tomater", "amount":1},
-		{"id":"Presset hvidløg", "amount":1},
-		{"id":"Grøntsagsbuillon", "amount":1}
-		
-		
-		
-       
-        
+    "recipe": "Kålen deles i grove buketter og svinges i varm olie et par minutter.\\ Sukker, vand, citronskal og saft kommes ved og gryden dækkes med låg.\\ Damp i 2 minutter til kålen er sprødmør, og smag til med salt og kværnet sort peber.\\ Server drysset med parmesan og spis godt brød til.",
+    "persons": 4,
+    "time": "30 minutter"
+  },
+  {
+    "name": "Bønnegryde med majs og feta",
+    "desc": "OPSKRIFTEN ER PÅ MIDLERTIDIG STANDBY GRUNDET LEMFÆLDIG OMGANG MED ENHEDER",
+    "content": [
+      {
+        "id": "Hakkede tomater",
+        "amount": 1
+      },
+      {
+        "id": "Presset hvidløg",
+        "amount": 1
+      },
+      {
+        "id": "Grøntsagsbuillon",
+        "amount": 1
+      }
     ],
-	
-    "recipe":"OPSKRIFTEN ER PÅ MIDLERTIDIG STANDBY GRUNDET LEMFÆLDIG OMGANG MED ENHEDER",
-      "persons":4,
-      "time": "OPSKRIFTEN ER PÅ MIDLERTIDIG STANDBY GRUNDET LEMFÆLDIG OMGANG MED ENHEDER"
-	  },
-	  	   {"name":"Carolines allermestgoeste kyllingedeller",
-    "desc":"En glutenfri oprskrift, så generalsekretæren ikke dør (foreslået af generalsekretæren). Som alternativ til glutenfri havregryn kan mel af loppefrøsskaller bruges",
-    "content":[
-        {"id":"Hakket kyllingekød", "amount":500},
-		{"id":"Forårsløg", "amount":2},
-		{"id":"Fine ærter", "amount":0.16},
-		{"id":"Æg", "amount":1},
-		{"id":"Glutenfri havregryn", "amount":0.015},
-		{"id":"Koriander", "amount":0},
-		{"id":"Salt og peber", "amount":0}
-		
-		
-		
-       
-        
+    "recipe": "OPSKRIFTEN ER PÅ MIDLERTIDIG STANDBY GRUNDET LEMFÆLDIG OMGANG MED ENHEDER",
+    "persons": 4,
+    "time": "OPSKRIFTEN ER PÅ MIDLERTIDIG STANDBY GRUNDET LEMFÆLDIG OMGANG MED ENHEDER"
+  },
+  {
+    "name": "Carolines allermestgoeste kyllingedeller",
+    "desc": "En glutenfri oprskrift, så generalsekretæren ikke dør (foreslået af generalsekretæren). Som alternativ til glutenfri havregryn kan mel af loppefrøsskaller bruges",
+    "content": [
+      {
+        "id": "Hakket kyllingekød",
+        "amount": 500
+      },
+      {
+        "id": "Forårsløg",
+        "amount": 2
+      },
+      {
+        "id": "Fine ærter",
+        "amount": 0.16
+      },
+      {
+        "id": "Æg",
+        "amount": 1
+      },
+      {
+        "id": "Glutenfri havregryn",
+        "amount": 0.015
+      },
+      {
+        "id": "Koriander",
+        "amount": 0
+      },
+      {
+        "id": "Salt og peber",
+        "amount": 0
+      }
     ],
-	
-    "recipe":"Hak forårsløg fint. Rør kød, løg, optøede ærter, æg og havregryn sammen.\\ Tilføj krydderier. Form til små frikadeller og steg på panden til de er brune.\\ Lad dem gå i ovnen 10 minutter efterfølgende ved 160 graders varmluft, for at holde på fugten i dem.",
-      "persons":4,
-	     "time": "3o minutter"
-	  },
-	  {"name":"Stegte ris (kød by choice)",
-    "desc":"En glutenfri oprskrift, så generalsekretæren ikke dør (foreslået af generalsekretæren). Hvis der tilføjes kød stiger $CO_2$ udledningen betragteligt, især hvis kødet stammer fra klovdyr (se evt. tabellen til sidst i kogebogen)",
-    "content":[
-        {"id":"Ris", "amount":300},
-		{"id":"Forårsløg", "amount":3},
-		{"id":"Fine ærter", "amount":0},
-		{"id":"Søde majs", "amount":0},
-		{"id":"Gulerødder", "amount":5},
-		{"id":"Æg", "amount":3},
-		{"id":"Selleri", "amount":2},
-		{"id":"Evt. hakket kød efter eget valg", "amount":3}
-		
-		
-		
-       
-        
+    "recipe": "Hak forårsløg fint. Rør kød, løg, optøede ærter, æg og havregryn sammen.\\ Tilføj krydderier. Form til små frikadeller og steg på panden til de er brune.\\ Lad dem gå i ovnen 10 minutter efterfølgende ved 160 graders varmluft, for at holde på fugten i dem.",
+    "persons": 4,
+    "time": "3o minutter"
+  },
+  {
+    "name": "Stegte ris (kød by choice)",
+    "desc": "En glutenfri oprskrift, så generalsekretæren ikke dør (foreslået af generalsekretæren). Hvis der tilføjes kød stiger $CO_2$ udledningen betragteligt, især hvis kødet stammer fra klovdyr (se evt. tabellen til sidst i kogebogen)",
+    "content": [
+      {
+        "id": "Ris",
+        "amount": 300
+      },
+      {
+        "id": "Forårsløg",
+        "amount": 3
+      },
+      {
+        "id": "Fine ærter",
+        "amount": 0
+      },
+      {
+        "id": "Søde majs",
+        "amount": 0
+      },
+      {
+        "id": "Gulerødder",
+        "amount": 5
+      },
+      {
+        "id": "Æg",
+        "amount": 3
+      },
+      {
+        "id": "Selleri",
+        "amount": 2
+      },
+      {
+        "id": "Evt. hakket kød efter eget valg",
+        "amount": 3
+      }
     ],
-	
-    "recipe":"Kog risene dagen før og lad dem stå i køleskabet natten over. \\Snit alle grøntsager fint og steg dem på panden. \\Pisk æggene og lav dem til røræg på en separat pande. \\Vend risene i med de stegte grøntsager. Vend æggene i. \\Ønskes det med kød, så steges dette på en separat pande og vendes i til sidst.",
-      "persons":4,
-	  "time": "30 minutter"
-	  },
-	  	   {"name":"Prinsessesuppe",
-    "desc":"En glutenfri oprskrift, så generalsekretæren ikke dør (foreslået af generalsekretæren).",
-    "content":[
-        {"id":"Rødbeder", "amount":2.5},
-		{"id":"Bagekartofler", "amount":3},
-		{"id":"Selleri", "amount":3},
-		{"id":"Gulerødder", "amount":4},
-		{"id":"Søde kartofler", "amount":1.5},
-		{"id":"Grøntsagsbuillon", "amount":3},
-		{"id":"Salt", "amount":0}
-		
-		
-		
-       
-        
+    "recipe": "Kog risene dagen før og lad dem stå i køleskabet natten over. \\Snit alle grøntsager fint og steg dem på panden. \\Pisk æggene og lav dem til røræg på en separat pande. \\Vend risene i med de stegte grøntsager. Vend æggene i. \\Ønskes det med kød, så steges dette på en separat pande og vendes i til sidst.",
+    "persons": 4,
+    "time": "30 minutter"
+  },
+  {
+    "name": "Prinsessesuppe",
+    "desc": "En glutenfri oprskrift, så generalsekretæren ikke dør (foreslået af generalsekretæren).",
+    "content": [
+      {
+        "id": "Rødbeder",
+        "amount": 2.5
+      },
+      {
+        "id": "Bagekartofler",
+        "amount": 3
+      },
+      {
+        "id": "Selleri",
+        "amount": 3
+      },
+      {
+        "id": "Gulerødder",
+        "amount": 4
+      },
+      {
+        "id": "Søde kartofler",
+        "amount": 1.5
+      },
+      {
+        "id": "Grøntsagsbuillon",
+        "amount": 3
+      },
+      {
+        "id": "Salt",
+        "amount": 0
+      }
     ],
-	
-    "recipe":"Alle grøntsager skrælles og skæres i tern.\\ Grøntsagsboullion blandes med 1.5 liter vand og sættes i kog i en stor gryde.Tilsæt et drys salt. \\ Alle grøntsagstern koges heri til de er helt bløde.\\ Hele molevitten køres i gennem med en stavblender til der er en fin konsistens.\\ Kan smages til med salt.",
-      "persons":5,
-	     "time": "Ukendt"
-	 },
-	{"name":"Vegetarisk risotto",
-    "desc":"Vegatarisk risotto der kan benyttes som hovederet. Sæssonsvarende svampe kan med fordel benyttes",
-    "content":[
-        {"id":"Risottoris", "amount":0.300},
-		{"id":"Vand", "amount":1},
-		{"id":"Grøntsagsbuillon", "amount":1},
-		{"id":"Løg", "amount":1},
-		{"id":"Hvidløg", "amount":2},
-		{"id":"Persille", "amount":1},
-		{"id":"Blandede svampe", "amount":0.200},
-		{"id":"Olivenolie", "amount":3},
-		{"id":"Parmesanost", "amount":0.150},
-		{"id":"Smør", "amount":0.025},
-		{"id":"Salt og peber", "amount":0}
-		
-       
-        
+    "recipe": "Alle grøntsager skrælles og skæres i tern.\\ Grøntsagsboullion blandes med 1.5 liter vand og sættes i kog i en stor gryde.Tilsæt et drys salt. \\ Alle grøntsagstern koges heri til de er helt bløde.\\ Hele molevitten køres i gennem med en stavblender til der er en fin konsistens.\\ Kan smages til med salt.",
+    "persons": 5,
+    "time": "Ukendt"
+  },
+  {
+    "name": "Vegetarisk risotto",
+    "desc": "Vegatarisk risotto der kan benyttes som hovederet. Sæssonsvarende svampe kan med fordel benyttes",
+    "content": [
+      {
+        "id": "Risottoris",
+        "amount": 0.300
+      },
+      {
+        "id": "Vand",
+        "amount": 1
+      },
+      {
+        "id": "Grøntsagsbuillon",
+        "amount": 1
+      },
+      {
+        "id": "Løg",
+        "amount": 1
+      },
+      {
+        "id": "Hvidløg",
+        "amount": 2
+      },
+      {
+        "id": "Persille",
+        "amount": 1
+      },
+      {
+        "id": "Blandede svampe",
+        "amount": 0.200
+      },
+      {
+        "id": "Olivenolie",
+        "amount": 3
+      },
+      {
+        "id": "Parmesanost",
+        "amount": 0.150
+      },
+      {
+        "id": "Smør",
+        "amount": 0.025
+      },
+      {
+        "id": "Salt og peber",
+        "amount": 0
+      }
     ],
-    "recipe":"Start med at skære løg, hvidløg, rense og skære svampene i mundrette stykker.\\ Varm olien op i en middelvarm gryde og kog en liter vand evt i en elkedel.\\ Steg løg og hvidløg i et minut, hvorefter ris tilsættes og steges i ca. et minut til den bliver klar i farven. Tilsæt kogende vand lidt efter lidt under omrøring. Det tager ca. 20-30 minutter.\\ Skyl og hak derefter persillen, som tilsættes risottoen sammen med 50 gram revet parmesan eller gærflager og eventuelt smør. \\Lad parmesanen smelte og smag til med salt og peber. Server med revet parmesan og lidt hakket persille ved siden af til selv at putte på.",
-      "persons":4,
-      "time": "50 minutter"
-	  }
+    "recipe": "Start med at skære løg, hvidløg, rense og skære svampene i mundrette stykker.\\ Varm olien op i en middelvarm gryde og kog en liter vand evt i en elkedel.\\ Steg løg og hvidløg i et minut, hvorefter ris tilsættes og steges i ca. et minut til den bliver klar i farven. Tilsæt kogende vand lidt efter lidt under omrøring. Det tager ca. 20-30 minutter.\\ Skyl og hak derefter persillen, som tilsættes risottoen sammen med 50 gram revet parmesan eller gærflager og eventuelt smør. \\Lad parmesanen smelte og smag til med salt og peber. Server med revet parmesan og lidt hakket persille ved siden af til selv at putte på.",
+    "persons": 4,
+    "time": "50 minutter"
+  }
 ]
    
