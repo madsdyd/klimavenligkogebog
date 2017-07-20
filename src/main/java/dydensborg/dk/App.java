@@ -25,11 +25,13 @@ public class App
         Options options = new Options();
 
         int numPersons = 4;
-        String outputFileName = "recipes.tex";
+        String recipeOutputFileName = "recipes.tex";
+        String dataOutputFileName = "data.tex";
 
         // add options
         options.addOption("h", "help", false, "print this message");
-        options.addOption("o", "output", true, "output file [" + outputFileName + "]");
+        options.addOption("r", "recipe", true, "recipe output file [" + recipeOutputFileName + "]");
+        options.addOption("d", "data", true, "data output file [" + dataOutputFileName + "]");
         options.addOption("p", "persons", true, "how many persons to create for [" + numPersons + "]");
 
         // generate Help Formatter
@@ -57,8 +59,11 @@ public class App
             numPersons = Integer.parseInt(line.getOptionValue("persons"));
         }
 
-        if (line.hasOption("output")) {
-            outputFileName = line.getOptionValue("output");
+        if (line.hasOption("recipe")) {
+            recipeOutputFileName = line.getOptionValue("recipe");
+        }
+        if (line.hasOption("data")) {
+            dataOutputFileName = line.getOptionValue("data");
         }
 
         // Test we have two free options, or complain
@@ -117,8 +122,8 @@ public class App
 
 
         ///////////////////////////////////////////////////
-        // Generate output.
-        StringBuilder output = new StringBuilder();
+        // Generate output that builds the recipes
+        StringBuilder recipeOutput = new StringBuilder();
 
         // Sort recipes by sortorder, name, then group them
         recipes = recipes
@@ -129,22 +134,29 @@ public class App
 
 
         String lastSection = "";
-
-
-
         for(Recipe r : recipes) {
             if (!lastSection.equals(r.getMealType())) {
-                output.append("\\rusection{" + r.getMealType() + "}" + System.lineSeparator());
+                recipeOutput.append("\\rusection{" + r.getMealType() + "}" + System.lineSeparator());
                 lastSection = r.getMealType();
             }
-            output.append(r.toTex(ingredientMap));
+            recipeOutput.append(r.toTex(ingredientMap));
         }
 
         // System.out.print(output.toString());
+        // Write this output to the recipe Output file.
+        FileUtils.writeStringToFile(new File(recipeOutputFileName), recipeOutput.toString(), Charset.forName("UTF-8"), false);
+        System.out.println( "Recipe output written to " + recipeOutputFileName );
 
-        FileUtils.writeStringToFile(new File(outputFileName), output.toString(), Charset.forName("UTF-8"), false);
 
-        System.out.println( "Output written to " + outputFileName );
+        // Write some data to the data output file.
+        StringBuilder dataOutput = new StringBuilder();
+
+        // Write the number of persons to a variable
+        dataOutput.append("\\def \\ruNumPersons {").append(numPersons).append("}").append(System.lineSeparator());
+
+        // Write this output to the data Output file.
+        FileUtils.writeStringToFile(new File(dataOutputFileName), dataOutput.toString(), Charset.forName("UTF-8"), false);
+
 
     }
 }
