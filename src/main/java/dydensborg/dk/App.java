@@ -2,6 +2,7 @@ package dydensborg.dk;
 
 import org.apache.commons.cli.*;
 import org.apache.commons.io.FileUtils;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 import java.io.File;
 import java.io.IOException;
@@ -147,12 +148,26 @@ public class App
         FileUtils.writeStringToFile(new File(recipeOutputFileName), recipeOutput.toString(), Charset.forName("UTF-8"), false);
         System.out.println( "Recipe output written to " + recipeOutputFileName );
 
-
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////
         // Write some data to the data output file.
         StringBuilder dataOutput = new StringBuilder();
 
         // Write the number of persons to a variable
         dataOutput.append("\\def \\ruNumPersons {").append(numPersons).append("}").append(System.lineSeparator());
+
+        // Write the list of ingredients with coo
+        ingredients = ingredients.stream().sorted(Comparator.comparing(Ingredient::getId)).collect(Collectors.toList());
+        dataOutput.append("\\newcommand{\\rucooingredients}{").append(System.lineSeparator());
+        for(Ingredient i: ingredients) {
+            if (i.getUnit().isEmpty()) {
+                i.setUnit("stk");
+            }
+            dataOutput.append("  \\rucooingredient{")
+                    .append(i.getId()).append("}{")
+                    .append(i.getUnit()).append("}{")
+                    .append(i.getCo2()).append("}").append(System.lineSeparator());
+        }
+        dataOutput.append("}").append(System.lineSeparator());
 
         // Write this output to the data Output file.
         FileUtils.writeStringToFile(new File(dataOutputFileName), dataOutput.toString(), Charset.forName("UTF-8"), false);
