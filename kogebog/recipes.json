@@ -74,7 +74,8 @@
     ],
     "recipe": "Start med at finde din stavblender eller foodprocessor frem, for hvis du skal mose bønner i hånden, så tager det lidt mere end 3 minutter. \\Hæld vandet fra bønnerne og skyl dem godt under rindende vand.\\Hæld bønner og karry i en skål og blend til du får en tyk, lyserød masse.\\ Pres hvidløgsfedene og skær rødlæget i små tern og vend begge dele i postejen. Smag til med salt og peber.",
     "persons": 4,
-    "time": "5 minutter"
+    "time": "5 minutter",
+	 "meal": "Frokost"
   },
   {
     "name": "Ristede og spicy snackkikærter",
@@ -952,7 +953,7 @@
     ],
     "recipe": "Hak forårsløg fint. Rør kød, løg, optøede ærter, æg og havregryn sammen.\\ Tilføj krydderier. Form til små frikadeller og steg på panden til de er brune.\\ Lad dem gå i ovnen 10 minutter efterfølgende ved 160 graders varmluft, for at holde på fugten i dem.",
     "persons": 4,
-    "time": "3o minutter"
+    "time": "30 minutter"
   },
   {
     "name": "Stegte ris (kød by choice)",
@@ -1031,6 +1032,242 @@
     "recipe": "Alle grøntsager skrælles og skæres i tern.\\ Grøntsagsboullion blandes med 1.5 liter vand og sættes i kog i en stor gryde.Tilsæt et drys salt. \\ Alle grøntsagstern koges heri til de er helt bløde.\\ Hele molevitten køres i gennem med en stavblender til der er en fin konsistens.\\ Kan smages til med salt.",
     "persons": 5,
     "time": "Ukendt"
+  },
+   {
+    "name": "Ærtepuré",
+    "desc": "En opskrift der med fordel kan bruges til grøntsagsstænger eller som pålæg.",
+    "content": [
+      {
+        "id": "Frosne ærter",
+        "amount": 0.200
+      },
+      {
+        "id": "Citronsaft",
+        "amount": 0
+      },
+      {
+        "id": "Hvidløg",
+        "amount": 1.5
+      },
+      {
+        "id": "Græsk yoghurt",
+        "amount": 2
+      },
+      {
+        "id": "Salt og peber",
+        "amount": 0
+      },
+      {
+        "id": "Spidskommen",
+        "amount": 1
+      }
+    ],
+    "recipe": "Hæld kogende vand over de frosne ærter og lad dem stå et par minutter til de er optøede.\\ Dræn vandet fra og blend ærterne til en jævn puré.\\ Rør med skyr og smag til med presset hvidløg, spidskommen, citronsaft, salt og peber.",
+    "persons": 4,
+    "time": "10 minutter"
+  },
+    {
+    "name": "Dåsemadsgryde",
+    "desc": "En nem aftensmadsret. Retten er meget flydende og egner sig derfor bedst til servering i dybe tallerkner.",
+    "content": [
+      {
+        "id": "Hakkede tomater",
+        "amount": 2
+      },
+      {
+        "id": "Kokosmælk",
+        "amount": 1
+      },
+      {
+        "id": "Tomatpasta",
+        "amount": 1
+      },
+      {
+        "id": "Pasta",
+        "amount": 0.5
+      }
+    ],
+    "recipe": "Hæld alle ingredienserne i en gryde og lad det koge op\\ Skru ned for blusset og lad det simre i 10 min \\Servér med pasta",
+    "persons": 4,
+    "time": "Ukendt",
+	"meal": "Aftensmad"
+  },
+   {
+    "name": "Æggesalat",
+    "desc": "En ret der er velegnet som pålæg til frokost.",
+    "content": [
+      {
+        "id": "Æg",
+        "amount": 8
+      },
+      {
+        "id": "Græsk yoghurt",
+        "amount": 7
+      },
+      {
+        "id": "Karry",
+        "amount": 4
+      },
+      {
+        "id": "Salt",
+        "amount": 1
+      },
+	  {
+        "id": "Peber",
+        "amount": 1
+      }
+    ],
+    "recipe": "Kog æggene: læg dem i en gryde og dæk dem med vand. Sæt låg på gryden og sæt den over kog. \\Når vandet koger skruer du lidt ned og sætter et ur på 8 min.\\Efter 8 min hældes vandet fra og æggene skylles med koldt vand. Pil æggene \\Yoghurten røres sammen med krydderierne til en dressing\\Æggene skæres i små tern og blandes i dressingen",
+    "persons": 4,
+    "time": "20 minutter ",
+	"meal": "Frokost"
+  },
+     {
+    "name": "Omelet m. løg og gedeost",
+    "desc": "En ret der bedst egner sig til at spise selv, og som ikke er god til et større arrangement",
+    "content": [
+      {
+        "id": "Æg",
+        "amount": 2
+      },
+      {
+        "id": "Løg",
+        "amount": 0.5
+      },
+      {
+        "id": "Gedeost",
+        "amount": 5.5
+      },
+      {
+        "id": "Salt og peber",
+        "amount": 0
+      }
+    ],
+    "recipe": "Snit løg og steg dem til de er bløde på panden.\\ Slå æggene ud og pisk dem let. Hæld dem over de bløde løg på panden og lad den stå ved svag varme, til den er fast.\\ Læg skiverne af gedeost på den stadig varme omelet og server med det samme.",
+    "persons": 1,
+    "time": "10 minutter +5 minutter per omelet ",
+	"meal": "Morgenmad"
+  },
+  {
+    "name": "Bananpandekager",
+    "desc": "En nem morgenmadsret. Hvis den skal laves til mange personer på en gang, kræver det flere pander. Som topping kan frugt, bær, honning, chokolade eller peanutbutter f.eks. bruges.",
+    "content": [
+      {
+        "id": "Modne bananer",
+        "amount": 2
+      },
+      {
+        "id": "Æg",
+        "amount": 3
+      },
+      {
+        "id": "Havregryn",
+        "amount": 0.035
+      },
+	  {
+        "id": "Kardemomme, vaniljepulver eller kanel",
+        "amount": 0.5
+      },
+      {
+        "id": "Grov mel (kan erstattes med mandelmel eller anden nøddemel)",
+        "amount": 0.060
+      },
+	  {
+        "id": "Fedtstof til stegning",
+        "amount": 0
+      }
+    ],
+    "recipe": "Mos bananerne godt og pisk dem sammen med de øvrige ingredienser.\\ Varm panden op og kom fedtstof på. Kom pandekagedejen på i klatter med en spiseske.\\ Vend dem, når de er stegt på den ene side. Servér straks.",
+    "persons": 4,
+    "time": "15 minutter +2 minutter per pandekage",
+	"meal": "Morgenmad"
+  },
+    {
+    "name": "Pandekager",
+    "desc": "Et sødt alternativ til bananpandekagerne. Mere egnet som dessert end som morgenmad. Opskriften bliver til 10 pandekager",
+    "content": [
+      {
+        "id": "Hvedemel",
+        "amount": 0.150
+      },
+      {
+        "id": "Vand",
+        "amount": 0.450
+      },
+      {
+        "id": "Æg",
+        "amount": 3
+      },
+	  {
+        "id": "Salt",
+        "amount": 0.5
+      },
+      {
+        "id": "Magarine",
+        "amount": 0.050
+      }
+	  
+    ],
+    "recipe": "Pisk melet sammen med halvdelen af mælken til en jævn blanding. Tilsæt resten af mælken, æg og salt - og pisk det hele godt.\\ Smelt smørret i en stegepande og kom det i blandingen.\\ Bag tynde pandekager på en rigtig varm stegepande. Brug ½ - ¾ dl dej pr. pandekage.\\ Server de lune pandekager med forskellige slags syltetøj og sukker.",
+    "persons": 2,
+    "time": "15 minutter +2 minutter per pandekage"
+	
+  },
+  {
+    "name": "Perlebyggrød",
+    "desc": "En grød, der kan bruges som morgenmad, og som nemt kan laves til mange. Man kan undlade tørrede bær og erstatte med den frugt, man har lyst til, fx rosiner eller banan.",
+    "content": [
+      {
+        "id": "Perlebyg",
+        "amount": 0.100
+      },
+      {
+        "id": "Mælk",
+        "amount": 1
+      },
+      {
+        "id": "Sukker",
+        "amount": 0.03
+      },
+	  {
+        "id": "Salt",
+        "amount": 0
+      },
+      {
+        "id": "Tørrede bær (tranebær, tyttebær)",
+        "amount": 0.100
+      },
+	   {
+        "id": "Kanelsukker",
+        "amount": 0
+      }
+    ],
+    "recipe": "Kom perlebyg, mælk, sukker og salt i en gryde og kog det i ca. 30 min. under let omrøring, til det bliver en cremet grød.\\ Vend de tørrede bær i grøden. \\Drys evt. med kanelsukker, og server.",
+    "persons": 4,
+    "time": "40 minutter",
+	"meal": "Morgenmad"
+  },
+  {
+    "name": "Havregrød",
+    "desc": "En grød, der kan bruges som morgenmad, og som nemt kan laves til mange. Alt efter hvilken topping der benyttes kan udledningen ændres. Opskriften kan også varmes 1 par minutter i mikroovnen i stedet",
+    "content": [
+      {
+        "id": "Havregryn",
+        "amount": 0.035
+      },
+      {
+        "id": "Vand",
+        "amount": 0.2
+      },
+	  {
+        "id": "Salt",
+        "amount": 0
+      }
+    ],
+    "recipe": "Bland ingredienserne i en gryde og sæt det i kog indtil konsistensen er som ønsket.\\  Server med ønsket topping, fx frugtkompot/marmelade, kanelsukker, rosiner eller frisk frugt.",
+    "persons": 1,
+    "time": "Afhænger af den kogte mængde vand",
+	"meal": "Morgenmad"
   },
   {
     "name": "Vegetarisk risotto",
