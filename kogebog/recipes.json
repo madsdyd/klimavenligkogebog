@@ -142,7 +142,8 @@
     ],
     "recipe": "Kikærterne skylles og dryppes godt af i en sigte.\\ Blend kikærterne med de øvrige ingredienser indtil konsistensen er som ønsket. \\Tilsæt evt. mere olie, hvis der er behov for det. Smag til med salt og citron.",
     "persons": 4,
-    "time": "12 minutter"
+    "time": "12 minutter",
+	"meal": "Frokost"
   },
   {
     "name": "Fyldte auberginer",
@@ -469,7 +470,7 @@
         "amount": 1
       },
       {
-        "id": "Forskellige grøntsager (f.eks. 1/4 af hver af gulerøder,broccoli,squash og rødløg)",
+        "id": "Forskellige grøntsager",
         "amount": 0.8
       },
       {
@@ -1150,7 +1151,7 @@
   },
   {
     "name": "Bananpandekager",
-    "desc": "En nem morgenmadsret. Hvis den skal laves til mange personer på en gang, kræver det flere pander. Som topping kan frugt, bær, honning, chokolade eller peanutbutter f.eks. bruges.",
+    "desc": "En nem morgenmadsret. Hvis den skal laves til mange personer på en gang, kræver det flere pander. Som topping kan frugt, bær, honning, chokolade eller peanutbutter f.eks. bruges. Som alternativ til mel kan nøddemælk bruges",
     "content": [
       {
         "id": "Modne bananer",
@@ -1169,7 +1170,7 @@
         "amount": 0.5
       },
       {
-        "id": "Grov mel (kan erstattes med mandelmel eller anden nøddemel)",
+        "id": "Grov mel",
         "amount": 0.060
       },
 	  {
