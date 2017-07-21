@@ -20,6 +20,9 @@ public class Ingredient {
     String id;
     String unit;
     double co2;
+    // Should this be in the list of ingredients or not. Defaults to true.
+    boolean list;
+
 
     public String getId() {
         return id;
@@ -43,6 +46,14 @@ public class Ingredient {
 
     public void setCo2(double co2) {
         this.co2 = co2;
+    }
+
+    public boolean isList() {
+        return list;
+    }
+
+    public void setList(boolean list) {
+        this.list = list;
     }
 
     /**
@@ -70,6 +81,11 @@ public class Ingredient {
             System.err.println("While parsing ingredient " + i.id + ", missing co2. Please check file for errors");
         }
         i.co2 = jsonObject.getJsonNumber("co2").doubleValue();
+
+        i.list = true;
+        if ( jsonObject.containsKey("list") ) {
+            i.list = jsonObject.getBoolean("list");
+        }
 
         System.out.println("Parsed ingredient " + i.id);
 
