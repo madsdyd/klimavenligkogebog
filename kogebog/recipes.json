@@ -1,26 +1,5 @@
 [
-  {
-    "name": "Boller i Karry",
-    "desc": "Boller i Karry er en dejlig ret, som alle kan lide",
-    "content": [
-      {
-        "id": "Kartofler",
-        "amount": 2
-      },
-      {
-        "id": "Ris",
-        "amount": 1
-      },
-      {
-        "id": "Agurk",
-        "amount": 2
-      }
-    ],
-    "recipe": "Tag en stor gryde. \\Snit kartoflerne fint. Kog lortet\\Efter 30 minutter er det færdigt",
-    "persons": 4,
-    "time": "1 time",
-    "meal": "Morgenmad"
-  },
+
   {
     "name": "Bradepandeomelet",
     "desc": "Denne ret kan benyttes som et proteinrigt alternativ til vegetarisk pålæg",
@@ -109,7 +88,7 @@
     "recipe": "Skyl kikærterne og lad dem dryppe godt af i en sigte.\\ Bland de øvrige ingredienser sammen og vend kikærterne i blandingen.\\ Spred de krydrede kikærterne ud på en bageplade med bagepapir og bag dem ved 220C i 20-30 min., eller indtil de virker sprøde – rør undervejs.\\Lad dem køle helt af på bagepladen.",
     "persons": 4,
     "time": "30 minutter",
-    "meal": "Snacks"
+    "meal": "Snacks og desserter"
   },
   {
     "name": "Hummus",
@@ -240,7 +219,7 @@
         "amount": 2
       }
     ],
-    "recipe": "Varm olien i en stor gryde ved middel varme og tilsæt hvidløg og ingefær´og rør rundt i 1 minut, hvorefter karry, spidskommen, kardemomme, koriander, og chiliflager tilsættes.\\ svits krydderierne af i et minut under omrøring. \\Skyl linserne i en sigte og kom dem i gryden sammen med grøntsagsboullion og hakkede tomater. \\Lad det simre under låg i 45 minutter. Rør jævnligt i gryden og tilsæt evt. lidt vand, hvis den bliver for fast. \\Smag til med salt og server i dybe skåle med masser af koriander på toppen, raita og brød gerne naan.",
+    "recipe": "Varm olien i en stor gryde ved middel varme og tilsæt hvidløg og ingefær og rør rundt i 1 minut, hvorefter karry, spidskommen, kardemomme, koriander, og chiliflager tilsættes.\\ Svits krydderierne af i et minut under omrøring. \\Skyl linserne i en sigte og kom dem i gryden sammen med grøntsagsboullion og hakkede tomater. \\Lad det simre under låg i 45 minutter. Rør jævnligt i gryden og tilsæt evt. lidt vand, hvis den bliver for fast. \\Smag til med salt og server i dybe skåle med masser af koriander på toppen, raita og brød gerne naan.",
     "persons": 4,
     "time": "1 time(med Raita)",
     "meal": "Aftensmad"
@@ -728,7 +707,7 @@
     "content": [
       {
         "id": "Linser",
-        "amount": 150
+        "amount": 0.150
       },
       {
         "id": "Vand",
@@ -870,7 +849,7 @@
         "amount": 0.050
       },
       {
-        "id": "Citrones saft og fintrevede skal",
+        "id": "Citrons saft og fintrevede skal",
         "amount": 0.5
       },
       {
@@ -925,7 +904,7 @@
     "content": [
       {
         "id": "Hakket kyllingekød",
-        "amount": 500
+        "amount": 0.500
       },
       {
         "id": "Forårsløg",
@@ -1065,7 +1044,8 @@
     ],
     "recipe": "Hæld kogende vand over de frosne ærter og lad dem stå et par minutter til de er optøede.\\ Dræn vandet fra og blend ærterne til en jævn puré.\\ Rør med skyr og smag til med presset hvidløg, spidskommen, citronsaft, salt og peber.",
     "persons": 4,
-    "time": "10 minutter"
+    "time": "10 minutter",
+	"meal": "Frokost"
   },
     {
     "name": "Dåsemadsgryde",
@@ -1209,9 +1189,10 @@
       }
 	  
     ],
-    "recipe": "Pisk melet sammen med halvdelen af mælken til en jævn blanding. Tilsæt resten af mælken, æg og salt - og pisk det hele godt.\\ Smelt smørret i en stegepande og kom det i blandingen.\\ Bag tynde pandekager på en rigtig varm stegepande. Brug ½ - ¾ dl dej pr. pandekage.\\ Server de lune pandekager med forskellige slags syltetøj og sukker.",
+    "recipe": "Pisk melet sammen med halvdelen af mælken til en jævn blanding. Tilsæt resten af mælken, æg og salt - og pisk det hele godt.\\ Smelt smørret i en stegepande og kom det i blandingen.\\ Bag tynde pandekager på en rigtig varm stegepande. Brug 1/2- 3/4 dl dej pr. pandekage.\\ Server de lune pandekager med forskellige slags syltetøj og sukker.",
     "persons": 2,
-    "time": "15 minutter +2 minutter per pandekage"
+    "time": "15 minutter +2 minutter per pandekage",
+	"meal": "Snacks og desserter"
 	
   },
   {
@@ -1269,6 +1250,189 @@
     "persons": 1,
     "time": "Afhænger af den kogte mængde vand",
 	"meal": "Morgenmad"
+  },
+   {
+    "name": "Havregryn med havremælk",
+    "desc": "En af de simpleste former for morgenmad. Egner sig fint til større arrangementer. Denne variant er med havremælk, da denne har den laveste udledning af alle former for mælk.",
+    "content": [
+      {
+        "id": "Havregryn",
+        "amount": 0.125
+      },
+      {
+        "id": "Havremælk",
+        "amount": 2.25
+      }
+    ],
+    "recipe": "Havregrynene stilles op i en skål med havremælken ved siden af.\\ Her kan diverse toppings påføres. Som topping kan blandt andet benyttes sukker, nødder, banan eller andet frugt. Klimapåvirkningen af disse kan vurderes ud fra registeret i slutningen af bogen",
+    "persons": 1,
+    "time": "0 minutter (Mere, alt efter valget af toppings)",
+	"meal": "Morgenmad"
+  },
+   {
+    "desc": "Opskrift på boller som kan bruges til morgenmad. Opskriften giver 2 boller per person",
+    "name": "Boller",
+    "content": [
+      {
+        "id": "Knækkede rugkerner",
+        "amount": 0.500
+      },
+      {
+        "id": "Gær",
+        "amount": 0.05
+      },
+      {
+        "id": "Hvedemel",
+        "amount": 2
+      },
+	  {
+        "id": "Vand",
+        "amount": 1.5
+      },
+      {
+        "id": "Salt",
+        "amount": 5
+      },
+	   {
+        "id": "Sukker",
+        "amount": 0.010
+      }
+    ],
+    "recipe": "Kog rugkernerne i 5 minutter med 600 ml vand\\ Overhæld dem med det resterende, kolde vand og lad det hele afkøle i køleskabet i ca. 30 minutter, til det er blevet godt lunkent.\\Udrør gær i det lunkne vand og tilsæt salt, sukker og mel, som altsammen røres godt sammen – meget gerne på røremaskine i minimum 10 minutter.\\ Form bollerne med spiseskeer dyppet regelmæssigt i vand og placer dem på en bageplade med bagepapir.\\ Stil boller til hævning under viskestykker i 1.5 time.\\ Bag dem ved 180 grader i ca. 14-17 minutter",
+    "persons": 22,
+    "time": "Forberedelse og bagning 40 min, Hævning ca 1,5 + 0,5 time",
+	"meal": "Morgenmad"
+  },
+  {
+    "desc": "Mere grove boller der også inkluderer gulerod. Opskriften giver 2 boller per person. Tilsæt evt revne æbler og erstat hvedemel med grovere mel",
+    "name": "Gulerodsboller",
+    "content": [
+      {
+        "id": "Vand",
+        "amount": 0.500
+      },
+      {
+        "id": "Gær",
+        "amount": 0.05
+      },
+      {
+        "id": "Salt",
+        "amount": 1
+      },
+	  {
+        "id": "Olivenolie",
+        "amount": 2
+      },
+      {
+        "id": "Gulerødder",
+        "amount": 2.5
+      },
+	  {
+        "id": "Hvedemel",
+        "amount": 1
+      },
+	   {
+        "id": "Solsikkekerner",
+        "amount": 2
+      }
+    ],
+    "recipe": "Vandet gøres lunket, og gæren og sukkeren tilsættes.\\ Riv guleroden og rør den, olivenolie, solsikkekerner og salt i.\\ Rør noget af melet i og når det begynder at samle sig, så tag dejen ud på bordet og ælt dejen godt.\\ Sæt dejen til hævning i 1 time et lunt sted og med et klæde over.\\ Form dejen til ca. 24 boller og sæt på bageplade. Lad den hæve i yderligere 30 minutter. \\Bag ved 180 grader varmluft i ca. 14-17 minutter. Afkøl på bagerist.",
+    "persons": 12,
+    "time": "Forberedelse og bagning 40 min, Hævning ca 1,5 time",
+	"meal": "Morgenmad"
+  },
+  {
+    "desc": "Hjemmelavet pålæg der både kan bruges som morgen eller aftensmad",
+    "name": "Figenpålæg",
+    "content": [
+      {
+        "id": "Tørrede figner",
+        "amount": 15
+      },
+      {
+        "id": "Daddel",
+        "amount": 4
+      },
+      {
+        "id": "Citrons saft",
+        "amount": 1
+      },
+	  {
+        "id": "Vand",
+        "amount": 0.15
+      },
+      {
+        "id": "Vaniljepulver",
+        "amount": 1
+      },
+	  {
+        "id": "Salt",
+        "amount": 0
+      }
+      
+    ],
+    "recipe": "Skær fignerne og dadlerne i mindre stykker, og kom alle ingredienserne i en gryde.\\ Bring det hele i kog. Skru herefter ned for varmen, og lad det hele simre i 10-15 minutter.\\ Lad det køle lidt af og stik så en stavblender i gryden, og kør til du har en jævn konsistens. Smag til med salt",
+    "persons": 4,
+    "time": "20 minutter",
+	"meal": "Morgenmad"
+  },
+  {
+    "desc": "En snack der med fordel kan spises sammen med rosenkålspuré. I opskriften er taget udgangspunkt i at et rugbrød vejer et halvt kilo, i det der i den indsendte opskrift til redaktionens store fortrydelse ikke var beskrevet hvilken størrelse rugbrød der var tale om.",
+    "name": "Rugbrødschips",
+    "content": [
+      {
+        "id": "Ikke-skiveskåret rugbrød",
+        "amount": 0.25
+      },
+      {
+        "id": "Olivenolie",
+        "amount": 0
+      },
+      {
+        "id": "Havsalt",
+        "amount": 0
+      }
+      
+    ],
+    "recipe": "Opvarm ovnen på 200 grader.\\ Skær rugbrødet i så tynde skiver, som du kan. Skær skiverne i små trekanter.\\Fordel rugbrødstrekanterne på en bageplade med bagepapir. De skal ligge i ét lag, så brug evt. flere bageplader.\\ Dryp olivenolie ud over rugbrødsstykkerne. Drys med havsalt.\\ Sæt bagepladen med rugbrødstykkerne i ovnen i ca. 12 min. Afkøl dem på en rist og spis dem eller opbevar dem i en tætlukke dåse eller glas. ",
+    "persons": 4,
+    "time": "15 minutter",
+	"meal": "Snacks og desserter"
+  },
+   {
+    "desc": "En snack der passer godt sammen med ting der kan dyppes i, f.eks. rugbrødschips",
+    "name": "Rosenkålspuré",
+    "content": [
+      {
+        "id": "Rosenkål",
+        "amount": 0.7
+      },
+      {
+        "id": "Smør",
+        "amount": 0.05
+      },
+	  {
+        "id": "Salt og peber",
+        "amount": 0
+      },
+        "id": "Honning",
+	  {
+        "amount": 0.05
+      },
+	  {
+        "id": "Smør",
+        "amount": 0.05
+      },
+      {
+        "id": "Havsalt",
+        "amount": 0
+      }
+      
+    ],
+    "recipe": "Opvarm ovnen på 200 grader.\\ Skær rugbrødet i så tynde skiver, som du kan. Skær skiverne i små trekanter.\\Fordel rugbrødstrekanterne på en bageplade med bagepapir. De skal ligge i ét lag, så brug evt. flere bageplader.\\ Dryp olivenolie ud over rugbrødsstykkerne. Drys med havsalt.\\ Sæt bagepladen med rugbrødstykkerne i ovnen i ca. 12 min. Afkøl dem på en rist og spis dem eller opbevar dem i en tætlukke dåse eller glas. ",
+    "persons": 4,
+    "time": "15 minutter",
+	"meal": "Snacks og desserter"
   },
   {
     "name": "Vegetarisk risotto",
