@@ -1415,8 +1415,8 @@
         "id": "Salt og peber",
         "amount": 0
       },
-        "id": "Honning",
 	  {
+        "id": "Honning",
         "amount": 0.05
       },
 	  {
@@ -1486,6 +1486,97 @@
     "recipe": "Start med at skære løg, hvidløg, rense og skære svampene i mundrette stykker.\\ Varm olien op i en middelvarm gryde og kog en liter vand evt i en elkedel.\\ Steg løg og hvidløg i et minut, hvorefter ris tilsættes og steges i ca. et minut til den bliver klar i farven. Tilsæt kogende vand lidt efter lidt under omrøring. Det tager ca. 20-30 minutter.\\ Skyl og hak derefter persillen, som tilsættes risottoen sammen med 50 gram revet parmesan eller gærflager og eventuelt smør. \\Lad parmesanen smelte og smag til med salt og peber. Server med revet parmesan og lidt hakket persille ved siden af til selv at putte på.",
     "persons": 4,
     "time": "50 minutter"
+  },
+
+  {
+    "name": "Pasta med kødsovs",
+    "desc": "En velsmagende pasta med kødsovs der indeholder mange grøntsager og som derfor er både sund og forholdsvis klimavenlig.\\Tip: Brug en blender eller foodprocessor til at snitte grøntsagerne med. Man kan også snitte fint med en kniv, men rettens smag træder bedst frem, hvis grøntsagerne bliver blendet.  Kan laves i store portioner og fryses ned.",
+    "content": [
+      {
+        "id": "Løg",
+        "amount": 6
+      },
+      {
+        "id": "Hvidløg",
+        "amount": 6
+      },
+      {
+        "id": "Olivenolie",
+        "amount": 3
+      },
+      {
+        "id": "Hakket oksekød",
+        "amount": 2.4
+      },
+      {
+        "id": "Hakkede tomater",
+        "amount": 8
+      },
+      {
+        "id": "Squash",
+        "amount": 4
+      },
+      {
+        "id": "Peberfrugt",
+        "amount": 3
+      },
+      {
+        "id": "Gulerødder",
+        "amount": 9
+      },
+      {
+        "id": "Vand",
+        "amount": 0.3
+      },
+      {
+        "id": "Oksekødsbouillon",
+        "amount": 5
+      },
+      {
+        "id": "Tomatpuré",
+        "amount": 36
+      },
+      {
+        "id": "Salt",
+        "amount": 9
+      },
+      {
+        "id": "Peber",
+        "amount": 9
+      },
+      {
+        "id": "Oregano",
+        "amount": 18
+      },
+      {
+        "id": "Timian",
+        "amount": 6
+      },
+      {
+        "id": "Basilikum",
+        "amount": 6
+      },
+      {
+        "id": "Chili",
+        "amount": 3
+      },
+      {
+        "id": "Pasta",
+        "amount": 4
+      },
+      {
+        "id": "Ketchup",
+        "amount": 60
+      },
+      {
+        "id": "Parmesanost",
+        "amount": 0.5
+      }
+    ],
+    "recipe": "Hak løg og skær hvidløg fin. Varm olien i bunden af en gryde, og svits løg og hvidløg til løgene bliver klare.\\Smuldr kødet i gryden og svits det, til det bliver lysebrunt.\\Tilsæt de hakkede tomater og vandet.\\Blend eller snit gulerødderne og tilsæt dem. Snit og tilsæt derefter squash og pebre.\\Tilføj krydderierne.\\Lad retten koge op, og derefter simre over lav varme i en times tid. Jo længere den får lov at simre, jo bedre vil retten smage.\\Kog pasta'en i en gryde med vand og lidt salt.\\Server med katchup og parmesanost.",
+    "persons": 20,
+    "time": "1 time + 1 time til at simre",
+    "meal": "Aftensmad"
   }
 ]
    

@@ -156,9 +156,9 @@ public class App
         dataOutput.append("\\def \\ruNumPersons {").append(numPersons).append("}").append(System.lineSeparator());
 
         // Write the list of ingredients with coo
-        ingredients = ingredients.stream().sorted(Comparator.comparing(Ingredient::getId)).collect(Collectors.toList());
+        List<Ingredient> listIngredients = ingredients.stream().filter(i -> i.isList()).sorted(Comparator.comparing(Ingredient::getId)).collect(Collectors.toList());
         dataOutput.append("\\newcommand{\\rucooingredients}{").append(System.lineSeparator());
-        for(Ingredient i: ingredients) {
+        for(Ingredient i: listIngredients) {
             if (i.getUnit().isEmpty()) {
                 i.setUnit("stk");
             }
