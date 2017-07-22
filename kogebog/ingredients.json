@@ -55,7 +55,7 @@
   {  "id": "Grønne linser",  "unit": "kg",  "co2": 0.29},
   {  "id": "Grøntsagsbuillon",  "unit": "terning",  "co2": 0.013},
   {  "id": "Gulerødder",  "unit": "",  "co2": 0.00854341736},
-  {  "id": "Gær", "unit":"kg", "co2":734},
+  {  "id": "Gær", "unit":"kg", "co2":0.734},
   {  "id": "Hakkede tomater",  "unit": "dåse",  "co2": 0.44},
   {  "id": "Hakket kyllingekød",  "unit": "kg",  "co2": 3.4},
   {  "id": "Æbleeddike",  "unit": "spsk",  "co2": 0},
