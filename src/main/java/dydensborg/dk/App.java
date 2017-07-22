@@ -6,8 +6,11 @@ import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 import java.io.File;
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.math.MathContext;
 import java.nio.charset.Charset;
 import java.nio.file.Paths;
+import java.text.DecimalFormat;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
@@ -172,10 +175,15 @@ public class App
             if (i.getUnit().isEmpty()) {
                 i.setUnit("stk");
             }
+
+            BigDecimal bd = new BigDecimal(i.getCo2());
+            bd = bd.round(new MathContext(3));
+            String co2String = new DecimalFormat("###.##").format(bd.doubleValue());
+
             dataOutput.append("  \\rucooingredient{")
                     .append(i.getId()).append("}{")
                     .append(i.getUnit()).append("}{")
-                    .append(i.getCo2()).append("}").append(System.lineSeparator());
+                    .append(co2String).append("}").append(System.lineSeparator());
         }
         dataOutput.append("}").append(System.lineSeparator());
 
