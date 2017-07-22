@@ -187,12 +187,22 @@ public class App
         }
         dataOutput.append("}").append(System.lineSeparator());
 
+        // dump list of all recipes, sorted on CO2, then name
+        List<Recipe> co2Recipes = recipes.stream().sorted(Comparator.comparing(Recipe::getCo2).thenComparing(Recipe::getName)).collect(Collectors.toList());
+        dataOutput.append("\\newcommand{\\rucoorecipes}{").append(System.lineSeparator());
+        for (Recipe r: co2Recipes) {
+            dataOutput.append("  \\rucoorecipe{")
+                    .append(String.format("%.3f", r.getCo2()/r.getPersons())).append("}{")
+                    .append(r.getCo2Rating()).append("}{")
+                    .append(r.getName()).append("}").append(System.lineSeparator());
+        }
+        dataOutput.append("}").append(System.lineSeparator());
+
         // Write this output to the data Output file.
         FileUtils.writeStringToFile(new File(dataOutputFileName), dataOutput.toString(), Charset.forName("UTF-8"), false);
 
 
         // For temporary purposes, dump list of all recipes, sorted on CO2, then name
-        List<Recipe> co2Recipes = recipes.stream().sorted(Comparator.comparing(Recipe::getCo2).thenComparing(Recipe::getName)).collect(Collectors.toList());
         System.out.println("Dumping list of " + co2Recipes.size() + " recipes, sorted on CO2 pr. person");
         for (Recipe r: co2Recipes) {
             System.out.println(String.format("%.3f: %s : %s", r.getCo2()/r.getPersons(), r.getCo2Rating(), r.getName()));
