@@ -173,5 +173,11 @@ public class App
         FileUtils.writeStringToFile(new File(dataOutputFileName), dataOutput.toString(), Charset.forName("UTF-8"), false);
 
 
+        // For temporary purposes, dump list of all recipes, sorted on CO2, then name
+        List<Recipe> co2Recipes = recipes.stream().sorted(Comparator.comparing(Recipe::getCo2).thenComparing(Recipe::getName)).collect(Collectors.toList());
+        System.out.println("Dumping list of " + co2Recipes.size() + " recipes, sorted on CO2 pr. person");
+        for (Recipe r: co2Recipes) {
+            System.out.println(String.format("%.3f: %s", r.getCo2()/r.getPersons(), r.getName()));
+        }
     }
 }
