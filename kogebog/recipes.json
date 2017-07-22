@@ -878,27 +878,6 @@
     "time": "30 minutter"
   },
   {
-    "name": "Bønnegryde med majs og feta",
-    "desc": "OPSKRIFTEN ER PÅ MIDLERTIDIG STANDBY GRUNDET LEMFÆLDIG OMGANG MED ENHEDER",
-    "content": [
-      {
-        "id": "Hakkede tomater",
-        "amount": 1
-      },
-      {
-        "id": "Presset hvidløg",
-        "amount": 1
-      },
-      {
-        "id": "Grøntsagsbuillon",
-        "amount": 1
-      }
-    ],
-    "recipe": "OPSKRIFTEN ER PÅ MIDLERTIDIG STANDBY GRUNDET LEMFÆLDIG OMGANG MED ENHEDER",
-    "persons": 4,
-    "time": "OPSKRIFTEN ER PÅ MIDLERTIDIG STANDBY GRUNDET LEMFÆLDIG OMGANG MED ENHEDER"
-  },
-  {
     "name": "Carolines allermestgoeste kyllingedeller",
     "desc": "En glutenfri oprskrift, så generalsekretæren ikke dør (foreslået af generalsekretæren). Som alternativ til glutenfri havregryn kan mel af loppefrøsskaller bruges",
     "content": [
@@ -1417,7 +1396,7 @@
       },
 	  {
         "id": "Honning",
-        "amount": 0.05
+        "amount": 0.15
       },
 	  {
         "id": "Æbleeddike",
@@ -1482,6 +1461,124 @@
     "recipe": "Start med at skære løg, hvidløg, rense og skære svampene i mundrette stykker.\\ Varm olien op i en middelvarm gryde og kog en liter vand evt i en elkedel.\\ Steg løg og hvidløg i et minut, hvorefter ris tilsættes og steges i ca. et minut til den bliver klar i farven. Tilsæt kogende vand lidt efter lidt under omrøring. Det tager ca. 20-30 minutter.\\ Skyl og hak derefter persillen, som tilsættes risottoen sammen med 50 gram revet parmesan eller gærflager og eventuelt smør. \\Lad parmesanen smelte og smag til med salt og peber. Server med revet parmesan og lidt hakket persille ved siden af til selv at putte på.",
     "persons": 4,
     "time": "50 minutter"
+  },
+    {
+    "name": "Hjemmelavet knækbrød",
+    "desc": "Snackknækbrød der kan laves til mange på en gang",
+    "content": [
+      {
+        "id": "Solsikkekerner",
+        "amount": 1
+      },
+      {
+        "id": "Hørfrø",
+        "amount": 1
+      },
+      {
+        "id": "Sesamfrø",
+        "amount": 1
+      },
+      {
+        "id": "Græskarkerner",
+        "amount": 1
+      },
+      {
+        "id": "Havregryn",
+        "amount": 0.035
+      },
+      {
+        "id": "Hvedemel",
+        "amount": 0.180
+      },
+      {
+        "id": "Vand",
+        "amount": 0.200
+      },
+      {
+        "id": "Olivenolie",
+        "amount": 6.666
+      },
+      {
+        "id": "Salt",
+        "amount": 1
+      },
+      {
+        "id": "Bagepulver",
+        "amount": 1
+      }
+    ],
+    "recipe": "Bland det hele i en skål.\\Rul massen ud på to bageplader og markér med en kniv hvor store stykker, du vil have.\\ Bag dem i ovnen ved 200 grader indtil de er gyldne – det tager cirka 15 minutter i min ovn.\\ Servér straks eller opbevar lufttæt.",
+    "persons": 4,
+    "time": "1 time",
+	"meal": "Snacks og desserter"
+  },
+   {
+    "name": "Kartoffel-bønne-salat",
+    "desc": "En salat der kan laves som nem frokost. Kartofler tilovers fra et måltid dagen før kan med fordel benyttes",
+    "content": [
+      {
+        "id": "Grønne bønner",
+        "amount": 0.250
+      },
+      {
+        "id": "Honning",
+        "amount": 1
+      },
+      {
+        "id": "Sennep",
+        "amount": 0.66
+      },
+	  {
+        "id": "Olivenolie",
+        "amount": 1
+      },
+	  {
+        "id": "Kartofler",
+        "amount": 0.300
+      },
+	  {
+        "id": "Rødløg",
+        "amount": 1
+      },
+	  {
+        "id": "Friske basilikumblade",
+        "amount": 0
+      },
+      {
+        "id": "Salt og peber",
+        "amount": 0
+      }
+    ],
+    "recipe": "Kartoflerne skrælles og halveres.\\ Læg dem i kogende vand og lad koge i 15-20 minutter afhængig af størrelse. Bønnerne skal også koges i letsaltet vand, blot i 4 -5 minutter.\\ Derefter skæres et rødløg i tynde både og friske basilikumblade skylles.\\ Dressingen røres af honning, sennep og olivenolie. Smag til med salt.\\ Når bønner og kartofler har kogt, skæres kartoflerne i tern, mens bønnerne halveres.\\ Bland det hele sammen i en skål med dressing og rødløg. \\Pynt med basilikum og husk at denne ret både kan serveres varm og kold.",
+    "persons": 4,
+    "time": "1 time, mindre hvis kartoflerne koges dagen før",
+	"meal": "Frokost"
+  },
+  {
+    "name": "Kikærtepostej med peberfrugt",
+    "desc": "En postej, der kan bruges som pålæg til brød eller som dyppelse til snacks. Kan toppes med citron eller krydres med paprika",
+    "content": [
+      {
+        "id": "Kikærter",
+        "amount": 1
+      },
+      {
+        "id": "Peberfrugt",
+        "amount": 1
+      },
+      {
+        "id": "Hvidløg",
+        "amount": 3.5
+      },
+      {
+        "id": "Salt og peber",
+        "amount": 0
+      }
+    ],
+    "recipe": "Skær peberfrugt i tern og halvér 3-4 fed hvidløg.\\ Hæld vandet fra kikærterne og kom alle ingredienser i en blender. Det hele blendes til en ensartet masse. \\Hvis man synes konsistensen er for fast, kan man tilføje lidt vand eller olie og blende igen, til man opnår den ønskede konsistens.",
+    "persons": 4,
+    "time": "5-10 minutter",
+	"meal": "Frokost"
   },
 
   {
