@@ -205,6 +205,9 @@ public class Recipe {
     List<Content> contents = new ArrayList<>();
     // Calculated co2 for the total number of persons
     double co2;
+    // A CO2 rating
+    String co2Rating = "undefined";
+
     // Number of persons recipe match - read from file, then adjusted to setting
     int persons;
     // Time needed to prepare the dish.
@@ -231,6 +234,10 @@ public class Recipe {
 
     public int getPersons() {
         return persons;
+    }
+
+    public String getCo2Rating() {
+        return co2Rating;
     }
 
     /**
@@ -339,7 +346,7 @@ public class Recipe {
         }
     }
 
-    public double calculateCo2(Map<String, Ingredient> ingredientsMap) {
+    public double calculateCo2(Map<String, Ingredient> ingredientsMap, Rater rater) {
         double res = 0.0;
         for(Content c : contents) {
             if ( null == ingredientsMap.get(c.getId())) {
@@ -348,6 +355,8 @@ public class Recipe {
             res += c.getAmount() * ingredientsMap.get(c.getId()).getCo2();
         };
         co2 = res;
+        co2Rating = rater.rate(co2/persons);
+
         return res;
     }
 
@@ -395,6 +404,7 @@ public class Recipe {
                 .append("  {" + persons + "}" + System.lineSeparator())
                 // #4 : C2
                 .append("  {" + co2string + "}" + System.lineSeparator())
+                .append("  {" + co2Rating + "}" + System.lineSeparator())
                 .append("  {" + time + "}" + System.lineSeparator())
                 .append("  {" + il.toString() + "}" + System.lineSeparator())
                 .append("  {" + steps.toString() + "}" + System.lineSeparator())

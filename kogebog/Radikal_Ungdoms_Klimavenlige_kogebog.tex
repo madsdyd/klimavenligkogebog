@@ -64,23 +64,24 @@
 	% Arg2 = Beskrivelse af opskriften
 	% Arg3 = Antal personer
 	% Arg4 = Udledning af CO2
-	% Arg5 = Tid
-	% Arg6 = Ingridiensliste
-	% Arg7 = Fremgangsmåde
+	% Arg5 = CO2 rating
+	% Arg6 = Tid
+	% Arg7 = Ingridiensliste
+	% Arg8 = Fremgangsmåde
 	\setRecipeColors{numeration=magenta}
-	\newenvironment{rurecipe}[7]{
+	\newenvironment{rurecipe}[8]{
 		\begin{recipe}
 		[%
 			portion={\portion{#3}},
-			preparationtime={#5},
-			calory={#4 (Kg ækvivalenter per person/total)}
+			preparationtime={#6},
+			calory={#5 : #4 (Kg ækvivalenter per person/total)}
 		]
 		{\textcolor{magenta}{#1}}
 		
 		
 		\ingredients
 		{%
-			#6
+			#7
 		}
 		
 		\introduction{
@@ -89,7 +90,7 @@
 				
 		\preparation{
 %	        \begin{enumerate}[align=left]
-			#7	
+			#8	
 %			\end{enumerate}
 		}
 			

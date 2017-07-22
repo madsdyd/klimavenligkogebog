@@ -1,0 +1,10 @@
+{
+ "ratings" : [
+            { "limit":0.100, "rating":"1" },
+            { "limit":0.300, "rating":"2" },
+            { "limit":0.600, "rating":"3" },
+            { "limit":0.900, "rating":"4" },
+            { "limit":1.000, "rating":"5" },
+            { "limit":10000000, "rating":"Sort" }
+            ]
+}

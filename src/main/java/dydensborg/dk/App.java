@@ -28,11 +28,13 @@ public class App
         int numPersons = 4;
         String recipeOutputFileName = "recipes.tex";
         String dataOutputFileName = "data.tex";
+        String configFileName = "config.json";
 
         // add options
         options.addOption("h", "help", false, "print this message");
         options.addOption("r", "recipe", true, "recipe output file [" + recipeOutputFileName + "]");
         options.addOption("d", "data", true, "data output file [" + dataOutputFileName + "]");
+        options.addOption("c", "config", true, "configuration file [" + configFileName + "]");
         options.addOption("p", "persons", true, "how many persons to create for [" + numPersons + "]");
 
         // generate Help Formatter
@@ -66,6 +68,9 @@ public class App
         if (line.hasOption("data")) {
             dataOutputFileName = line.getOptionValue("data");
         }
+        if (line.hasOption("config")) {
+            configFileName = line.getOptionValue("config");
+        }
 
         // Test we have two free options, or complain
         if ( line.getArgList().size() != 2 ) {
@@ -77,8 +82,13 @@ public class App
         String ingredientsFile = line.getArgList().get(0);
         String recipesFile = line.getArgList().get(1);
 
+        //////////////////////////////////////////////////
+        // Parse the configuration
+        Config config = Config.fromJsonFile(Paths.get(configFileName));
+        System.out.println("Config: " + config.toString());
 
-
+        // Create a Rater object and rate stuff.
+        Rater rater = new Rater(config.ratings);
 
 
         //////////////////////////////////////////////////
@@ -112,7 +122,7 @@ public class App
 
         for (Recipe r : recipes) {
             r.adjustToPersons(numPersons);
-            r.calculateCo2(ingredientMap);
+            r.calculateCo2(ingredientMap, rater);
 
         }
 
@@ -177,7 +187,7 @@ public class App
         List<Recipe> co2Recipes = recipes.stream().sorted(Comparator.comparing(Recipe::getCo2).thenComparing(Recipe::getName)).collect(Collectors.toList());
         System.out.println("Dumping list of " + co2Recipes.size() + " recipes, sorted on CO2 pr. person");
         for (Recipe r: co2Recipes) {
-            System.out.println(String.format("%.3f: %s", r.getCo2()/r.getPersons(), r.getName()));
+            System.out.println(String.format("%.3f: %s : %s", r.getCo2()/r.getPersons(), r.getCo2Rating(), r.getName()));
         }
     }
 }
