@@ -941,7 +941,7 @@
     "content": [
       {
         "id": "Ris",
-        "amount": 300
+        "amount": 0.300
       },
       {
         "id": "Forårsløg",
@@ -1377,7 +1377,7 @@
 	"meal": "Morgenmad"
   },
   {
-    "desc": "En snack der med fordel kan spises sammen med rosenkålspuré. I opskriften er taget udgangspunkt i at et rugbrød vejer et halvt kilo, i det der i den indsendte opskrift til redaktionens store fortrydelse ikke var beskrevet hvilken størrelse rugbrød der var tale om.",
+    "desc": "En snack der med fordel kan spises sammen med rosenkålspuré. I opskriften er taget udgangspunkt i at et rugbrød vejer et kilo, i det der i den indsendte opskrift til redaktionens store fortrydelse ikke var beskrevet hvilken størrelse rugbrød der var tale om.",
     "name": "Rugbrødschips",
     "content": [
       {
@@ -1420,16 +1420,12 @@
         "amount": 0.05
       },
 	  {
-        "id": "Smør",
-        "amount": 0.05
-      },
-      {
-        "id": "Havsalt",
-        "amount": 0
+        "id": "Æbleeddike",
+        "amount": 0.5
       }
       
     ],
-    "recipe": "Opvarm ovnen på 200 grader.\\ Skær rugbrødet i så tynde skiver, som du kan. Skær skiverne i små trekanter.\\Fordel rugbrødstrekanterne på en bageplade med bagepapir. De skal ligge i ét lag, så brug evt. flere bageplader.\\ Dryp olivenolie ud over rugbrødsstykkerne. Drys med havsalt.\\ Sæt bagepladen med rugbrødstykkerne i ovnen i ca. 12 min. Afkøl dem på en rist og spis dem eller opbevar dem i en tætlukke dåse eller glas. ",
+    "recipe": "Skyl rosenkålene, skær det nederste af roden og fjern yderbladene, indtil de ikke 'slipper' af sig selv. Ydrebladende kan eventuelt gemmes til en salat.\\ Bring en gryde med vand og salt i kog. Skær hjertet af rosenkålen (det inderste) i kvarter, og blancher rosenkålen i ca. 2 minutter til de er møre, men ikke overkogte. Pas på de ikke koger for længe, da det kan give en bitter smag og dårlig lugt\\ Blend rosenkålene med koldt smør, salt, peber, honning og eddike i en foodprocessor eller med en stavblender indtil det bliver en puré. ",
     "persons": 4,
     "time": "15 minutter",
 	"meal": "Snacks og desserter"
