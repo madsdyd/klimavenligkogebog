@@ -68,6 +68,7 @@ public class Recipe {
         }
 
 
+
         public String toTex(Map<String,Ingredient> ingredientMap) {
             StringBuilder res = new StringBuilder();
 
@@ -222,6 +223,14 @@ public class Recipe {
 
     public String getMealType() {
         return mealType;
+    }
+
+    public double getCo2() {
+        return co2;
+    }
+
+    public int getPersons() {
+        return persons;
     }
 
     /**
