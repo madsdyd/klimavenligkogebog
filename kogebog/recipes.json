@@ -203,7 +203,7 @@
         "amount": 0.5
       },
       {
-        "id": "Grøntsagsbuillon",
+        "id": "Grøntsagsbouillon",
         "amount": 1
       },
       {
@@ -255,7 +255,7 @@
   },
   {
     "name": "Wok med nudler",
-    "desc": "Indsæt beskrivelse her",
+    "desc": "En lækker vegetarisk wokret, der substituerer kød med tofu for at mindske klimabelastningen",
     "content": [
       {
         "id": "Porre",
@@ -381,7 +381,7 @@
   },
   {
     "name": "Ærtesuppe med mynte og hvidløgsbrød",
-    "desc": "Indsæt beskrivelse her",
+    "desc": "En relativt hurtig suppe, som nemt kan laves til størere forsamlinger",
     "content": [
       {
         "id": "Frosne ærter",
@@ -392,7 +392,7 @@
         "amount": 1
       },
       {
-        "id": "Grøntsagsbuillon",
+        "id": "Grøntsagsbouillon",
         "amount": 1
       },
       {
@@ -422,7 +422,7 @@
     ],
     "recipe": "Skær løget og pres hvidløgene. Steg løget og 1/3 del af hvidløget i olien ved middelhøj varme i 2 minutter.\\ Tilsæt kokosmælk, 1/2 liter kogende vand, de frosne ærter og bouillonterningen. Kom låg på gryden og skru ned for varmen.\\ Mens suppen koger skær brødet i passende stykker og kom olivenolie, resten af hvidløget og salt på stykkerne, hvorefter de kommer i en ovn på 180 grader varmluft i 5-10 minutter.\\ Kom mynten i suppen, blend og smag til med salt og peber. ",
     "persons": 3,
-    "time": "Ukendt"
+    "time": "25 minutter"
   },
   {
     "name": "Bajer-Torsk",
@@ -499,7 +499,7 @@
   },
   {
     "name": "Couscous med gulerøder, squash og turbo-tomatsauce",
-    "desc": "Indsæt beskrivelse her",
+    "desc": "En klimavenlig og sund gryderet som ikke tager lang tid at lave",
     "content": [
       {
         "id": "Rødløg",
@@ -601,7 +601,7 @@
   },
   {
     "name": "Ovnbagt ratatouille",
-    "desc": "Indsæt beskrivelse her",
+    "desc": "En mere bastant ret, der sagtens kan spises alene som aftensmad, eller med brød til",
     "content": [
       {
         "id": "Løg",
@@ -681,7 +681,7 @@
         "amount": 6
       },
       {
-        "id": "Grøntsagsbuillon",
+        "id": "Grøntsagsbouillon",
         "amount": 20
       },
       {
@@ -703,7 +703,7 @@
   },
   {
     "name": "Burger",
-    "desc": "Indsæt beskrivelse her",
+    "desc": "Et vegetarisk alternativ til den klassiske burger. Kan bruges som frokost til større arrangementer.",
     "content": [
       {
         "id": "Linser",
@@ -800,7 +800,7 @@
         "amount": 0.3
       },
       {
-        "id": "Grøntsagsbuillon",
+        "id": "Grøntsagsbouillon",
         "amount": 1
       },
       {
@@ -838,7 +838,7 @@
   },
   {
     "name": "Citronglaseret broccoli",
-    "desc": "INDSÆT BESKRIVELSE HER.",
+    "desc": "En ret der fungerer godt som pålæg til frokost eller som aftensmad med brød til",
     "content": [
       {
         "id": "Olivenolie",
@@ -875,7 +875,8 @@
     ],
     "recipe": "Kålen deles i grove buketter og svinges i varm olie et par minutter.\\ Sukker, vand, citronskal og saft kommes ved og gryden dækkes med låg.\\ Damp i 2 minutter til kålen er sprødmør, og smag til med salt og kværnet sort peber.\\ Server drysset med parmesan og spis godt brød til.",
     "persons": 4,
-    "time": "30 minutter"
+    "time": "30 minutter",
+	"meal": "Frokost"
   },
   {
     "name": "Carolines allermestgoeste kyllingedeller",
@@ -980,7 +981,7 @@
         "amount": 1.5
       },
       {
-        "id": "Grøntsagsbuillon",
+        "id": "Grøntsagsbouillon",
         "amount": 3
       },
       {
@@ -990,7 +991,7 @@
     ],
     "recipe": "Alle grøntsager skrælles og skæres i tern.\\ Grøntsagsboullion blandes med 1.5 liter vand og sættes i kog i en stor gryde.Tilsæt et drys salt. \\ Alle grøntsagstern koges heri til de er helt bløde.\\ Hele molevitten køres i gennem med en stavblender til der er en fin konsistens.\\ Kan smages til med salt.",
     "persons": 5,
-    "time": "Ukendt"
+    "time": "Delvist ukendt, men estimeret til 30 minutter"
   },
    {
     "name": "Ærtepuré",
@@ -1049,7 +1050,7 @@
     ],
     "recipe": "Hæld alle ingredienserne i en gryde og lad det koge op\\ Skru ned for blusset og lad det simre i 10 min \\Servér med pasta",
     "persons": 4,
-    "time": "Ukendt",
+    "time": "15 minutter",
 	"meal": "Aftensmad"
   },
    {
@@ -1422,7 +1423,7 @@
         "amount": 1
       },
       {
-        "id": "Grøntsagsbuillon",
+        "id": "Grøntsagsbouillon",
         "amount": 1
       },
       {
@@ -1512,6 +1513,64 @@
     "time": "1 time",
 	"meal": "Snacks og desserter"
   },
+  {
+    "name": "Falafel",
+    "desc": "Lækre falafler som kan laves og spises med det samme, eller fryses ned til senere brug. Kan serveres med tilbehør, som fyld i pitabrød, eller som pålæg til frokost",
+    "content": [
+      {
+        "id": "Kikærter",
+        "amount": 1
+      },
+      {
+        "id": "Persille",
+        "amount": 2
+      },
+      {
+        "id": "Hvidløg",
+        "amount": 2
+      },
+	  {
+        "id": "Æg",
+        "amount": 3
+      },
+	  {
+        "id": "Salt",
+        "amount": 2
+      },
+	  {
+        "id": "Koriander",
+        "amount": 4
+      },
+	  {
+        "id": "Spidskommen",
+        "amount": 4
+      },
+	   {
+        "id": "Chilipulver",
+        "amount": 4
+      },
+	  {
+        "id": "Rasp",
+        "amount": 4
+      },
+	  {
+        "id": "Citronsaft",
+        "amount": 6
+      },
+	  {
+        "id": "Løg",
+        "amount": 1.5
+      },
+      {
+        "id": "Madlavningsolie",
+        "amount": 50
+      }
+    ],
+    "recipe": "De tørrede kikærter sættes i blød dagen før. Alternativt kan 800g udblødte kikærter bruges\\ På dagen hældes vandet fra kikærterne.\\ Kikærterne puttes i en foodprocessor eller blender sammen med de andre ingredienser (undtagen olien, som bruges til at stege dem i). Blend alle ingredienserne sammen indtil de er blevet til en form for fars, som dog stadig godt må være en smule grov\\ Opvarm olien i en gryde. Den er færdig når den syder omkring en træpind.\\ Falaflerne formes herefter i hænderne til små kødbollelignende kugler, og puttes i gryden en efter en.\\ Herefter steges falaflerne i olien i takt med at de laves. De er færdige når deres overflade er brunlig og sprød. Det er vigtigt at huske at vende dem i gryden, og ikke lade sig blive snydt af at de i starten er lidt bløde. De hærdes nemlig når de køler.\\ Læg dem på en tallerken sammen, og varm kort i en ovn inden spisning",
+    "persons": 4,
+    "time": "1 time",
+	"meal": "Aftensmad"
+  },
    {
     "name": "Kartoffel-bønne-salat",
     "desc": "En salat der kan laves som nem frokost. Kartofler tilovers fra et måltid dagen før kan med fordel benyttes",
@@ -1555,6 +1614,222 @@
 	"meal": "Frokost"
   },
   {
+    "name": "Middelhavsgryde",
+    "desc": "En gryderet, der nemt kan laves til større arrangementer.",
+    "content": [
+      {
+        "id": "Grønne bønner",
+        "amount": 0.100
+      },
+      {
+        "id": "Løg",
+        "amount": 1
+      },
+      {
+        "id": "Kidneybønner",
+        "amount": 1
+      },
+	  {
+        "id": "Hakkede tomater",
+        "amount": 1
+      },
+	  {
+        "id": "Kartofler",
+        "amount": 0.250
+      },
+	  {
+        "id": "Hvidløg",
+        "amount": 2
+      },
+	  {
+        "id": "Grøntsagsbouillon",
+        "amount": 1
+      },
+	  {
+        "id": "Timian",
+        "amount": 1
+      },
+	  {
+        "id": "Oregano",
+        "amount": 1
+      },
+	  {
+        "id": "Basilikum",
+        "amount": 1
+      },
+	  {
+        "id": "Rosmarin",
+        "amount": 1
+      },
+      {
+        "id": "Salt og peber",
+        "amount": 0
+      }
+    ],
+    "recipe": "Tag de grønne bønner op af fryseren, så de kan tø lidt op. \\Skræl og skær kartoflerne i små tern. \\Skræl og skær løgene i både\\Dræn og skyl kidneybønnerne. \\Steg kartoflerne sammen med presset hvidløg ved mellemhøj varme i ca. 7 minutter – tilsæt lidt vand undervejs. \\Tilsæt løg og lad dem stege med i et par minutter, til de er klare. \\Tilsæt flåede tomater, krydderurter og bouillon og lad det hele småkoge under låg i ca. 12-15 minutter, til kartoflerne er næsten helt møre. \\Tilsæt grønne bønner og kidneybønner og varm retten godt igennem i, til kartoflerne er helt møre.\\Smag til med salt og friskkværnet peber",
+    "persons": 4,
+    "time": "40 minutter",
+	"meal": "Aftensmad"
+  },
+   {
+    "name": "Bagte rodfrugter",
+    "desc": "Kan enten spises alene, eller som tilbehør til en form for kød (Klimapåvirkningen er selvfølgelig ændret derefter)",
+    "content": [
+      {
+        "id": "Rodfrugter",
+        "amount": 1
+      },
+      {
+        "id": "Olivenolie",
+        "amount": 3
+      },
+      {
+        "id": "Timiankvist",
+        "amount": 2.5
+      },
+	  {
+        "id": "Citrons saft",
+        "amount": 0.5
+      },
+	  {
+        "id": "Havsalt",
+        "amount": 3.5
+      },
+	  {
+        "id": "Sort peber",
+        "amount": 3.5
+      }
+    ],
+    "recipe": "Skræl rodfrugterne og skær dem i skiver.\\ Blanchér dem i kogende, letsaltet vand i 3-5 min. til de er let møre, og lad dem dryppe af i en sigte.\\ Kom rodfrugterne i et fad, krydr med salt og peber, dryp med olie og kom timiankvistene ved.\\ Bag dem i ovnen i 30 min. ved 175 grader til de er godt gyldne.\\ Dryp de bagte rodfrugter med citronsaft",
+    "persons": 4,
+    "time": "40 minutter",
+	"meal": "Aftensmad"
+  },
+   {
+    "name": "Vegetarisk Moussaka med auberginer",
+    "desc": "En lækker vegetarisk ret, der også sagtens kan benyttes til større arrangementer. Bechamelsaucen kan produceres selv efter opskriften i bogen her, eller købes færdigt",
+    "content": [
+      {
+        "id": "Løg",
+        "amount": 1
+      },
+      {
+        "id": "Hvidløg",
+        "amount": 2
+      },
+      {
+        "id": "Olivenolie",
+        "amount": 0
+      },
+	  {
+        "id": "Kartofler",
+        "amount": 0.400
+      },
+	  {
+        "id": "Squash",
+        "amount": 0.5
+      },
+	  {
+        "id": "Aubergine",
+        "amount": 1
+      },
+	  {
+        "id": "Champignon",
+        "amount": 0.250
+      },
+	  {
+        "id": "Hakkede tomater",
+        "amount": 2
+      },
+	  {
+        "id": "Salt og peber",
+        "amount": 0
+      },
+	  {
+        "id": "Bechamelsauce",
+        "amount": 1
+      }
+	  ],
+    "recipe": "Skræl kartofler og skær dem i skiver. Kog kartoffelskiverne i en gryde i ca. 4-5 min. De skal ikke koges møre.\\ Skyl aubergine og squash og skær dem i skiver. Placer dem på en tallerken drysset med salt, og lad skiverne trække indtil moussakaen skal samles.\\ Skyl champignoner og skær dem i skiver. Hak løg og hvidløg og svits det på panden med olie sammen med champignon ved høj varme. Svits til al vandet er fordampet væk fra svampene.\\ Tilsæt dernæst hakkede tomater salt og peber og lad tomatsovsen simre og fordampe yderligere ned imens bechamelsovsen laves.\\ Saml moussakaen ved at lægge et lag aubergineskiver i bunden. Dernæst tomatsovs, kartoffelskiver, bechamelsovs, squashskiver, tomatsovs, kartoffelskiver, bechamelsovs og aubergineskiver på toppen.\\Bag moussakaen i ovnen ved 180 graders varmluft i ca. 30-35 min",
+    "persons": 4,
+    "time": "1 time",
+	"meal": "Aftensmad"
+  },
+  {
+    "name": "Lasagne",
+    "desc": "En lækker vegetarisk ret, der også sagtens kan benyttes til større arrangementer. Bechamelsaucen kan produceres selv efter opskriften i bogen her, eller købes færdigt. Sæssonsvarende svampe kan med fordel benyttes",
+    "content": [
+      {
+        "id": "Blandede svampe",
+        "amount": 0.200
+      },
+      {
+        "id": "Valnødder, pecan eller cashew",
+        "amount": 0.200
+      },
+      {
+        "id": "Løg",
+        "amount": 1
+      },
+	  {
+        "id": "Hvidløg",
+        "amount": 1.5
+      },
+	  {
+        "id": "Gulerødder",
+        "amount": 1
+      },
+	  {
+        "id": "Peberfrugt",
+        "amount": 1
+      },
+	  {
+        "id": "Grøntsagsbouillon",
+        "amount": 1
+      },
+	  {
+        "id": "Hakkede tomater",
+        "amount": 2
+      },
+	  {
+        "id": "Vand",
+        "amount": 0.1
+      },
+	  {
+        "id": "Mørk balsamico eller soyasauce",
+        "amount": 1.5
+      },
+	  {
+        "id": "Sort peber",
+        "amount": 0
+      },
+	  {
+        "id": "Sukker",
+        "amount": 0.0125
+      },
+	  {
+        "id": "En spiseskefuld friske krydderurter a la rosmarin, timian, oregano eller en blanding samt et blad laurbær",
+        "amount": 0
+      },
+	  {
+        "id": "Grønkål eller spinat",
+        "amount": 0.150
+      },
+	  {
+        "id": "Lasagneplader",
+        "amount": 0
+      },
+	  {
+        "id": "Bechamelsauce",
+        "amount": 1
+      }
+	  ],
+    "recipe": "Svampene rives på et rivejern i små bevægelser (så du ikke får alt for lange strimler). Kom svampene på en pande og steg dem 10-15 minutter til de har afgivet al væske.\\Hak løg og hvidløg i meget små tern og steg dem på panden. Skær imens peberfrugt, gulerødder og bladselleri i lige så meget små tern og steg dem efterfølgende til de er blanke men ikke brankede. \\Hak nødderne fint men ikke til pulver. Kom alle ingredienser til kødFRIsovs inkl. tomatsovs, vand og krydderier i en gryde og lad det simre 10 minutter til en time afhængigt af hvor lang tid du har til rådighed. Tilsæt mere væske eller tomat hvis den bliver for tyk.\\ Skyl spinaten/grønkålen. Fjern eventuelle større stykker krydderurt og laurbær fra kødFRIsovsen.\\ Fordel et lag lasagneplader i bunden af et fad på omkring 20x30 cm. Fordel 1/3 af kødFRIsovsen ovenpå. Kom så 1/3 af spinaten på. Så 1/3 af ostesovsen. Fortsæt på denne måde en gang til, og så en gang mere uden ostesovs, som til sidst puttes oven på det sidste lag plader. \\Kom lasagnen i en kold varmluftsovn, tænd på 180 grader og bag til til den har fået en god farve ovenpå og en skarp kniv glider nogenlunde nemt gennem alle lag - cirka 35 minutter.\\Hvis det øverste lag lasagneplader buler meget op under bagningen, så pres dem forsigtigt ned i sovsen igen, så de bliver gennemkogt. Den skal være lysebrun i kanterne, får den mere går du glip af det snaskede øverste lag. \\Lad lasagnen køle ned i 15 minutter inden servering, så bliver den mere fast i det.",
+    "persons": 4,
+    "time": "1 time",
+	"meal": "Aftensmad"
+  },
+  {
     "name": "Kikærtepostej med peberfrugt",
     "desc": "En postej, der kan bruges som pålæg til brød eller som dyppelse til snacks. Kan toppes med citron eller krydres med paprika",
     "content": [
@@ -1579,6 +1854,40 @@
     "persons": 4,
     "time": "5-10 minutter",
 	"meal": "Frokost"
+  },
+  {
+    "name": "Bechamelsauce til lasagne",
+    "desc": "Sauce til de to lasagner i kogebogen. En vegansk udgave kan laved hvor vegansk smør og usødet soyamælk bruges, og hvor parmesanost udelukkes.",
+    "content": [
+      {
+        "id": "Smør",
+        "amount": 0.042
+      },
+      {
+        "id": "Hvedemel",
+        "amount": 0.018
+      },
+      {
+        "id": "Mælk",
+        "amount": 0.5
+      },
+	   {
+        "id": "Parmesanost",
+        "amount": 0.05
+      },
+	   {
+        "id": "Muskatnød",
+        "amount": 1.5
+      },
+      {
+        "id": "Salt og peber",
+        "amount": 0
+      }
+    ],
+    "recipe": "Smelt smørret i en gryde, hvorefter melet tilsættes.\\ Derefter tilsættes mælken deciliter for deciliter under omrøring indtil rette konsistens opnås.\\ Tilsæt til slut muskatnød/ revet parmesan og smag til med salt og peber",
+    "persons": 4,
+    "time": "5-10 minutter",
+	"meal": "Aftensmad"
   },
 
   {
