@@ -57,7 +57,7 @@
 	 "meal": "Frokost"
   },
   {
-    "name": "Ristede og spicy snackkikærter",
+    "name": "Ristede og stærke kikærter",
     "desc": "Lækre kikærter, der enten kan spises som de er, eller bruges som sprød og krydret topping på en salat eller en wok. Kan også laves i glutenfri version, hvor majsmelet udelukkes",
     "content": [
       {
@@ -424,79 +424,7 @@
     "persons": 3,
     "time": "25 minutter"
   },
-  {
-    "name": "Bajer-Torsk",
-    "desc": "En ret der på trods af den inkluderer fisk, stadig er  klimavenlig. Årstidssvarende grøntsager kan med fordel bruges.",
-    "content": [
-      {
-        "id": "Torsk",
-        "amount": 0.600
-      },
-      {
-        "id": "Hvidløg",
-        "amount": 1
-      },
-      {
-        "id": "Finthakket persille",
-        "amount": 4
-      },
-      {
-        "id": "Estragon",
-        "amount": 1
-      },
-      {
-        "id": "Pilsnerøl",
-        "amount": 1
-      },
-      {
-        "id": "Forskellige grøntsager",
-        "amount": 0.8
-      },
-      {
-        "id": "Olivenolie",
-        "amount": 0.6
-      },
-      {
-        "id": "Citronsaft",
-        "amount": 2
-      },
-      {
-        "id": "Salt",
-        "amount": 0
-      },
-      {
-        "id": "Smør",
-        "amount": 0.025
-      },
-      {
-        "id": "Flydende fedtstof",
-        "amount": 2
-      },
-      {
-        "id": "Hvedemel",
-        "amount": 0.02
-      },
-      {
-        "id": "Fiskebouillon",
-        "amount": 1
-      },
-      {
-        "id": "Sennep",
-        "amount": 1
-      },
-      {
-        "id": "Kapers",
-        "amount": 1
-      },
-      {
-        "id": "Madlavningsfløde",
-        "amount": 0
-      }
-    ],
-    "recipe": "Marinaden (som består af hvidløget, persillen, estragonen og øllet) røres sammen, og den rengjorte torsk lægges i, og sættes i køleskabet for at trække i en time.\\ Grøntsagerne renses også og vendes med olie, salt og citronsaft.\\ Torsken tages derefter ud af marinaden, og lægges ovenpå grøntsagerne, og sammen bages de i 25-30 min i en 225oC varm ovn.\\Imens grøntsagerne og fisken bages laves sovsen. Fedtstof smeltes og melet tilsættes og “steges af,” fiskeboullionen tilsættes lidt af gangen under omrøring.\\ Sennepen og madlavningsfløden tilsættes imens den koger, og til sidst røres kapersene i.",
-    "persons": 4,
-    "time": "2 timer"
-  },
+  
   {
     "name": "Couscous med gulerøder, squash og turbo-tomatsauce",
     "desc": "En klimavenlig og sund gryderet som ikke tager lang tid at lave",
@@ -879,7 +807,7 @@
 	"meal": "Frokost"
   },
   {
-    "name": "Carolines allermestgoeste kyllingedeller",
+    "name": "Kyllingefrikadeller",
     "desc": "En glutenfri oprskrift. Som alternativ til glutenfri havregryn kan mel af loppefrøsskaller bruges",
     "content": [
       {
@@ -916,8 +844,8 @@
     "time": "30 minutter"
   },
   {
-    "name": "Stegte ris (kød by choice)",
-    "desc": "En glutenfri oprskrift, så generalsekretæren ikke dør (foreslået af generalsekretæren). Hvis der tilføjes kød stiger $CO_2$ udledningen betragteligt, især hvis kødet stammer fra klovdyr (se evt. tabellen til sidst i kogebogen)",
+    "name": "Stegte ris med eller uden kød",
+    "desc": "En glutenfri oprskrift. Hvis der tilføjes kød stiger $CO_2$ udledningen betragteligt, især hvis kødet stammer fra klovdyr (se evt. tabellen til sidst i kogebogen)",
     "content": [
       {
         "id": "Ris",
@@ -957,8 +885,8 @@
     "time": "30 minutter"
   },
   {
-    "name": "Prinsessesuppe",
-    "desc": "En glutenfri oprskrift, så generalsekretæren ikke dør (foreslået af generalsekretæren).",
+    "name": "Glutenfri suppe",
+    "desc": "En glutenfri oprskrift som alle kan spise.",
     "content": [
       {
         "id": "Rødbeder",
@@ -1026,32 +954,6 @@
     "persons": 4,
     "time": "10 minutter",
 	"meal": "Frokost"
-  },
-    {
-    "name": "Dåsemadsgryde",
-    "desc": "En nem aftensmadsret. Retten er meget flydende og egner sig derfor bedst til servering i dybe tallerkner.",
-    "content": [
-      {
-        "id": "Hakkede tomater",
-        "amount": 2
-      },
-      {
-        "id": "Kokosmælk",
-        "amount": 1
-      },
-      {
-        "id": "Tomatpasta",
-        "amount": 1
-      },
-      {
-        "id": "Pasta",
-        "amount": 0.5
-      }
-    ],
-    "recipe": "Hæld alle ingredienserne i en gryde og lad det koge op\\ Skru ned for blusset og lad det simre i 10 min \\Servér med pasta",
-    "persons": 4,
-    "time": "15 minutter",
-	"meal": "Aftensmad"
   },
    {
     "name": "Æggesalat",
