@@ -170,6 +170,9 @@ public class Recipe {
                     System.out.println("WARN: Almost nothing of " + getId() + " after rounding. Was "
                             + orgPresentationAmount + ", now is " + presentationAmount + ", reverting");
                     presentationAmount = orgPresentationAmount;
+                    // Matilde wants to round up in this case, to 0.5
+                    presentationAmount = 0.5;
+
                 }
 
                  amountString = new DecimalFormat("###.#").format(presentationAmount);
