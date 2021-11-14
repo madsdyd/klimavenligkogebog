@@ -163,7 +163,16 @@ public class Recipe {
                 BigDecimal bd = new BigDecimal(presentationAmount);
                 bd = bd.round(new MathContext(2));
                 presentationAmount = bd.doubleValue();
-                 amountString = new DecimalFormat("###.##").format(presentationAmount);
+                // Matilde wants it to be nearest 0 or 5.
+                double orgPresentationAmount = presentationAmount;
+                presentationAmount = Math.round(presentationAmount * 2) / 2.0;
+                if (orgPresentationAmount > 0.000001 && presentationAmount < 0.01) {
+                    System.out.println("WARN: Almost nothing of " + getId() + " after rounding. Was "
+                            + orgPresentationAmount + ", now is " + presentationAmount + ", reverting");
+                    presentationAmount = orgPresentationAmount;
+                }
+
+                 amountString = new DecimalFormat("###.#").format(presentationAmount);
             }
 
             // Ignore amounts that are zero
