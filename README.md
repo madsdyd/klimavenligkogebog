@@ -55,12 +55,12 @@ java -jar ../target/cookbook-1.0-SNAPSHOT-jar-with-dependencies.jar \
 Ovenstående laver input svarende til opskrifter til 5 personer.
 
 For at oversætte tex filen til latex, skal man installere xcookybooky som style i sin tex installation,
-samt support for Dansk.
+samt support for Dansk og nogle ekstra fonte.
 
 Under ubuntu, kan det gøres ved at installere disse pakker:
 
 ```
-sudo apt install texlive-publishers texlive-lang-european
+sudo apt install texlive-publishers texlive-lang-european texlive-fonts-extra
 ```
 
 Brug derefter f.eks. `texstudio` til at lave tex filen med, eller f.eks. `pdflatex`:
